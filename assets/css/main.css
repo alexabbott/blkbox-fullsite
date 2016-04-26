@@ -115,6 +115,48 @@ body {
   background: #fff !important;
 }
 
+.uppercase {
+  text-transform: uppercase !important;
+}
+.textCenter {
+  text-align: center !important;
+}
+
+.block {
+  display: block !important;
+}
+.inline {
+  display: inline !important;
+}
+.inlineBlock {
+  display: inline-block !important;
+}
+.none {
+  display: none !important;
+}
+.flex {
+  display: flex !important;
+}
+
+.absolute {
+  position: absolute;
+}
+
+
+.justifyAround {
+  justify-content: space-around !important;
+}
+.justifyBetween {
+  justify-content: space-between !important;
+}
+.justifyCenter {
+  justify-content: center !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
 /* Header
 -------------------------------------------------- */
 .header {
@@ -475,6 +517,87 @@ h1 a, h2 a, h3 a, h4 a {
   line-height: 50px;
 }
 
+/* About
+-------------------------------------------------- */
+body.about {
+  background: rgba(0,0,0,1);
+}
+body.about .header a {
+  color: rgba(255,255,255,1) !important;
+}
+body.about .header a:hover {
+  color: rgba(255,0,0,1) !important;
+}
+body.about #nav-icon span {
+  background: rgba(255,255,255,1) !important;
+}
+#AboutContent {
+  background: rgba(0,0,0,1);
+  margin: 0 auto;
+  color: rgba(255,255,255,1);
+  max-width: 856px;
+}
+
+#AboutContent h2 {
+  animation-duration: 1s;
+  font-weight: 600;
+}
+#AboutContent > span {
+  font-weight: 600;
+}
+
+#aboutGram {
+  margin: 100px auto;
+  max-width: 856px;
+}
+#photoStream {
+  height: 200px;
+}
+#photoStream .imgCont {
+  width: 18%;
+}
+#photoStream .imgCont img {
+  width: 100%;
+  height: auto;
+}
+#aboutGram h1 {
+  margin: .5em 0 0 0;
+}
+#aboutGram span {
+  font-size: .8em;
+}
+
+#aboutVid {
+  width: 100vw;
+  height: 56.25vw;
+  max-width: 856px;
+  max-height: 481.5px;
+  margin: 0 auto;
+  background: pink;
+  position: relative;
+}
+#aboutVid iframe {
+  width: 100%;
+  height: 100%;
+}
+#vidStill {
+  width: 100%;
+  height: 100%;
+}
+#vidStill img {
+  width: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  position: absolute;
+  z-index: 0;
+}
+#vidStill svg {
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+
 
 /* Next/Prev nav
 -------------------------------------------------- */
@@ -524,4 +647,18 @@ h1 a, h2 a, h3 a, h4 a {
 .colophon a b {
   color: red;
   padding-left: .25em;
+}
+
+body.about .footer {
+  color: white !important;
+}
+
+/* Keyframes
+-------------------------------------------------- */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fadeIn {
+  animation-name: fadeIn;
 }

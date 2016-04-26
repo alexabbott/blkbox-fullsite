@@ -36,4 +36,5 @@ $(document).ready(function(){
 	} else {
 		$('body').addClass('home');
 	}
+
 });
