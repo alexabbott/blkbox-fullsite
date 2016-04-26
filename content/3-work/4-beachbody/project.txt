@@ -1,0 +1,17 @@
+Title: Beachbody
+
+----
+
+Year: 2016
+
+----
+
+Text: Some text about beachbody project
+
+----
+
+Tags: stuff
+
+----
+
+Slug: beachbody

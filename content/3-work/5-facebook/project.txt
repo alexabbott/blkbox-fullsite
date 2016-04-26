@@ -1,0 +1,17 @@
+Title: Facebook
+
+----
+
+Year: 2016
+
+----
+
+Text: Some sample text about facebook
+
+----
+
+Tags: stuff
+
+----
+
+Slug: facebook

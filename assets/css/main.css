@@ -1,0 +1,517 @@
+/*
+
+Kirby Starterkit
+
+Author: Bastian Allgeier / Sascha Lack
+URL:    http://getkirby.com
+Email:  support@getkirby.com
+
+*/
+
+
+/* Source Sans Pro
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/sourcesanspro-300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/sourcesanspro-600.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
+}
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+  color: red;
+}
+.work a {
+  color: #fff;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html {
+  font-family: "futura-pt", sans-serif;
+  height: 101%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  background: #fff;
+  color: #222;
+  font-size: 1.25em;
+  height: 100vh;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  width: 100vw;
+}
+.work {
+  background: #000;
+  color: #fff;
+}
+.white {
+  color: #fff !important;
+}
+.bg-white {
+  background: #fff !important;
+}
+
+/* Header
+-------------------------------------------------- */
+.header {
+  margin-bottom: 1.5em;
+}
+.logo {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  transition: color 0.5s ease-out;
+}
+.work .logo {
+  color: #fff;
+}
+.logo img {
+  width: 2em;
+}
+
+
+/* Navigation
+-------------------------------------------------- */
+nav {
+  display: inline-block;
+  float: right;
+  height: 44px;
+  overflow: hidden;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+  transition: width .5s ease-in-out;
+  width: 0;
+}
+.show {
+  width: 330px;
+}
+.menu a {
+  color: #000;
+  display: block;
+}
+.work .menu a {
+  color: #fff;
+}
+.menu a:hover {
+  color: red;
+  text-decoration: none;
+}
+.menu .active {
+  color: red;
+}
+.menu li {
+  list-style: none;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+  border-top: 1px solid #ddd;
+  font-weight: 600;
+  padding: .35em 0;
+}
+.submenu {
+  display: none;
+  left: 1em;
+  position: absolute;
+  z-index: 1;
+}
+.submenu:before {
+  border-bottom: .5em solid transparent;
+  border-left: .5em solid #222;
+  border-top: .5em solid transparent;
+  content: '';
+  left: 0;
+  position: absolute;
+  top: -.5em;
+  z-index: -1;
+}
+.submenu li {
+  border-bottom: 1px solid #444;
+}
+.submenu a {
+  background: #222;
+  color: #fff;
+  font-size: .9em;
+  font-weight: 300;
+  padding: .5em 1.5em;
+  white-space: nowrap;
+}
+.submenu a:hover {
+  background: #333;
+  color: #fff;
+}
+
+#nav-icon {
+  cursor: pointer;
+  float: right;
+  height: 45px;
+  margin: 1.5em 1.5em 0 30px;
+  position: relative;
+  width: 40px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+#nav-icon span {
+  background: #000;
+  display: block;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.work #nav-icon span {
+  background: #fff;
+}
+
+/* Nav Icon */
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  left: 50%;
+  top: 18px;
+  width: 0%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  left: 50%;
+  top: 18px;
+  width: 0%;
+}
+
+
+@media screen and (min-width: 40em) {
+  .logo {
+    float: left;
+  }
+  .menu {
+    float: right;
+    margin-right: -1em;
+  }
+  .menu > li {
+    float: left;
+  }
+  .menu > li > a {
+    border: 0;
+    padding: .35em 1em;
+  }
+  .menu > li:hover .submenu {
+    display: block;
+  }
+}
+
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.25em;
+  margin-bottom: .5em;
+}
+h2 {
+  color: red;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.25em;
+  margin-bottom: .5em;
+}
+h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+}
+h4 {
+  color: red;
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-bottom: .5em;
+  line-height: 1.5em;
+}
+h1 a, h2 a, h3 a, h4 a {
+  border: 0 !important;
+  color: inherit;
+}
+
+
+
+/* Main
+-------------------------------------------------- */
+.main {
+  padding-bottom: 1.5em;
+}
+.main hr {
+  background: #ddd;
+  height: 2px;
+  margin: 3em 0;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+  margin-bottom: 1.5em;
+}
+.main a {
+  border-bottom: 2px solid #ddd;
+}
+.main a:hover {
+  border-color: #222;
+}
+
+.main .big-text {
+  font-size: 68px;
+  font-weight: 800;
+  line-height: 60px;
+  margin-left: 60px;
+  text-transform: uppercase;
+  width: 405px;
+}
+
+.main .hold-down {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main .hold-down p {
+  margin-bottom: 0;
+}
+
+.main .hold-down-text {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.main .hold-down .square {
+  background: #000;
+  cursor: pointer;
+  height: 100px;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 242%;
+  width: 100px;
+  transform: translate(-50%, -82%);
+  transition: width 1s, height 1s;
+}
+
+.main .hold-down .square.expand, .main .hold-down .square.expanded {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: 1em;
+}
+
+/* Projects
+-------------------------------------------------- */
+
+.project-image-holder {
+  display: none;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+}
+.project-image-holder img {
+  width: 100%;
+}
+
+/* Project meta
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 1.5em;
+}
+.meta li {
+  color: red;
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+}
+.meta li b {
+  color: #000;
+  font-weight: 400;
+  padding-right: .25em;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.teaser {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.teaser li {
+  list-style: none;
+}
+.teaser h3 {
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  bottom: 0;
+  font-size: .8em;
+  left: 0;
+  padding: 1em 1.5em 1.5em 1.5em;
+  position: absolute;
+  width: 100%;
+}
+.footer-logo {
+  font-weight: 600;
+}
+.work .footer {
+  color: #fff;
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon .right {
+  display: inline-block;
+  float: right;
+}
+.colophon .right a {
+  margin-left: 20px;
+}
+.colophon a b {
+  color: red;
+  padding-left: .25em;
+}
