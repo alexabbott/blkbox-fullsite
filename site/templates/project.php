@@ -16,7 +16,7 @@
     </div>
 
     <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-    <figure>
+    <figure class="animated slideInRight">
       <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
     </figure>
     <?php endforeach ?>

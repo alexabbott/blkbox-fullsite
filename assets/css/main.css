@@ -440,7 +440,7 @@ h1 a, h2 a, h3 a, h4 a {
   position: absolute;
   top: 242%;
   width: 100px;
-  transform: translate(-50%, -82%);
+  transform: translate(-50%, -76%);
   transition: width 1s, height 1s;
 }
 
@@ -486,6 +486,11 @@ h1 a, h2 a, h3 a, h4 a {
   cursor: pointer;
   display: inline-block;
   margin-top: -40px;
+}
+.client-title div {
+  border-bottom: 5px solid #ff0000;
+  margin: 0 auto;
+  width: 30px;
 }
 .client-list {
   background: rgba(0,0,0,0.8);
