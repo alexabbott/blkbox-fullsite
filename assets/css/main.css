@@ -563,7 +563,7 @@ h1 a, h2 a, h3 a, h4 a {
 .single-project .text {
   background: #fff;
   color: #000;
-  height: 100vh;
+  height: auto;
   padding: 40px;
   position: absolute;
   text-align: center;
@@ -574,6 +574,18 @@ h1 a, h2 a, h3 a, h4 a {
 .single-project .text h3 {
   font-weight: 800;
   text-transform: uppercase;
+}
+.single-project .text .headline {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.single-project .text .subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 60px;
 }
 .single-project .text .project-desc {
   text-align: left;
@@ -590,7 +602,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .single-project figure {
   height: 100vh;
-  position: absolute;
+  position: fixed;
   right: -20%;
   top: 0;
 }

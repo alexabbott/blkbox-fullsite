@@ -8,6 +8,12 @@ fields:
   title:
     label: Title
     type:  text
+  headline:
+    label: Headline
+    type:  text
+  subtitle:
+    label: Subtitle
+    type:  text
   slug:
     label: slug
     type:  text

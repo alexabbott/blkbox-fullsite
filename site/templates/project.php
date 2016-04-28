@@ -3,11 +3,13 @@
   <main class="main single-project" role="main">
 
 
-    <div class="text">
+    <div class="text animated slideInLeft">
       <div class="project-close">
         <a href="<?php echo url() ?>/work">&times;</a>
       </div>
       <h3><?php echo $page->title()->html() ?></h3>
+      <h1 class="headline"><?php echo $page->headline()->html() ?></h1>
+      <h3 class="subtitle"><?php echo $page->subtitle()->html() ?></h3>
       <div class="project-desc">
         <?php echo $page->text()->kirbytext() ?>
       </div>
