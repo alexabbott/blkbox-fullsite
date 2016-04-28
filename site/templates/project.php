@@ -1,22 +1,23 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main class="main single-project" role="main">
 
-    <h1><?php echo $page->title()->html() ?></h1>
-
-    <ul class="meta cf">
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
 
     <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
-
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
+      <div class="project-close">
+        <a href="<?php echo url() ?>/work">&times;</a>
+      </div>
+      <h3><?php echo $page->title()->html() ?></h3>
+      <div class="project-desc">
+        <?php echo $page->text()->kirbytext() ?>
+      </div>
     </div>
+
+    <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+    <figure>
+      <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+    </figure>
+    <?php endforeach ?>
 
     <nav class="nextprev cf" role="navigation">
       <?php if($prev = $page->prevVisible()): ?>

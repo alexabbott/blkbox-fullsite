@@ -160,12 +160,13 @@ body {
 /* Header
 -------------------------------------------------- */
 .header {
+  height: 75px;
   margin-bottom: 1.5em;
 }
 .logo {
   display: block;
   font-weight: 600;
-  margin-bottom: 1.5em;
+  margin-bottom: 0em;
   padding: 1.5em;
   transition: color 0.5s ease-out;
 }
@@ -228,6 +229,7 @@ nav {
   border-left: .5em solid #222;
   border-top: .5em solid transparent;
   content: '';
+  display: none;
   left: 0;
   position: absolute;
   top: -.5em;
@@ -379,7 +381,6 @@ h4 {
   line-height: 1.5em;
 }
 h1 a, h2 a, h3 a, h4 a {
-  border: 0 !important;
   color: inherit;
 }
 
@@ -397,12 +398,8 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .main p,
 .main figure,
-.main ul,
 .main ol {
   margin-bottom: 1.5em;
-}
-.main a {
-  border-bottom: 2px solid #ddd;
 }
 .main a:hover {
   border-color: #222;
@@ -461,26 +458,63 @@ h1 a, h2 a, h3 a, h4 a {
 /* Projects
 -------------------------------------------------- */
 
+.work .main {
+  text-align: center;
+}
 .project-image-holder {
   display: none;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
+  width: 75vw;
+  z-index: -1;
 }
 .project-image-holder img {
   width: 100%;
 }
 .work-title, .client-title {
+  color: #fff;
   text-align: center;
 }
 .work-title {
-  margin: -30px auto 30px auto;
+  margin-top: -15px;
+  margin-bottom: 30px;
 }
 .client-title {
   cursor: pointer;
+  display: inline-block;
   margin-top: -40px;
+}
+.client-list {
+  background: rgba(0,0,0,0.8);
+  bottom: 0;
+  display: block;
+  height: 321px;
+  left: 0;
+  padding: 30px 0;
+  position: absolute;
+  text-align: center;
+  transform: translate3d(0, 321px, 0);
+  transition: transform .3s ease-out;
+  width: 100%;
+}
+.client-list .row {
+  margin: 0 auto;
+}
+.client-list img {
+  display: inline-block;
+  width: 150px;
+}
+.client-list .row.clients-header {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.client-list .row.clients-close {
+  cursor: pointer;
+  font-size: 42px;
+  margin-bottom: 15px;
 }
 
 /* Project meta
@@ -505,6 +539,7 @@ h1 a, h2 a, h3 a, h4 a {
 -------------------------------------------------- */
 .teaser {
   list-style: none;
+  margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -516,11 +551,55 @@ h1 a, h2 a, h3 a, h4 a {
   font-weight: 600;
   line-height: 50px;
 }
+.teaser li h3 a {
+  display: inline-block;
+  height: 72px;
+  margin-bottom: -15px;
+}
+
+/* Single Project
+-------------------------------------------------- */
+.single-project .text {
+  background: #fff;
+  color: #000;
+  height: 100vh;
+  padding: 40px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+}
+.single-project .text h3 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.single-project .text .project-desc {
+  text-align: left;
+}
+.single-project .text .project-close {
+  cursor: pointer;
+  font-size: 36px;
+  right: 5%;
+  position: absolute;
+  top: 20px;
+}
+.single-project .text .project-close a {
+  color: #000;
+}
+.single-project figure {
+  height: 100vh;
+  position: absolute;
+  right: -20%;
+  top: 0;
+}
+
 
 /* About
 -------------------------------------------------- */
 body.about {
   background: rgba(0,0,0,1);
+  height: auto;
 }
 body.about .header a {
   color: rgba(255,255,255,1) !important;
@@ -530,6 +609,9 @@ body.about .header a:hover {
 }
 body.about #nav-icon span {
   background: rgba(255,255,255,1) !important;
+}
+body.about footer .colophon .right a {
+  color: #fff;
 }
 #AboutContent {
   background: rgba(0,0,0,1);
@@ -624,6 +706,7 @@ body.about #nav-icon span {
   padding: 1em 1.5em 1.5em 1.5em;
   position: absolute;
   width: 100%;
+  z-index: -1;
 }
 .footer-logo {
   font-weight: 600;

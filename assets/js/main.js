@@ -37,4 +37,20 @@ $(document).ready(function(){
 		$('body').addClass('home');
 	}
 
+	// show project images on mouseover
+	$('.teaser li h3 a').on('mouseover', function () {
+		$('.project-image-holder').css('display','none');
+		$(this).parent().parent().find('.project-image-holder').css('display','block');
+		$('.teaser li h3 a').css('border-bottom','none');
+		$(this).css('border-bottom','5px solid #ff0000');
+	});
+
+	// show hide client list
+	$('.client-title').on('click', function() {
+		$('.client-list').css('transform','translate3d(0,0,0)');
+	});
+	$('.clients-close').on('click', function() {
+		$('.client-list').css('transform','translate3d(0,321px,0)');
+	});
+
 });
