@@ -27,7 +27,7 @@ $(document).ready(function(){
 	});
 
 	// set body classes
-	if (window.location.pathname.indexOf('work') > -1) {
+	if (window.location.pathname.split('/')[window.location.pathname.split('/').length-1] === 'work') {
 		$('body').addClass('work');
 	} else if (window.location.pathname.indexOf('about') > -1) {
 		$('body').addClass('about');
@@ -47,10 +47,10 @@ $(document).ready(function(){
 
 	// show hide client list
 	$('.client-title').on('click', function() {
-		$('.client-list').css('transform','translate3d(0,0,0)');
+		$('.client-list').css('transform','translate3d(0,20px,0)');
 	});
 	$('.clients-close').on('click', function() {
-		$('.client-list').css('transform','translate3d(0,321px,0)');
+		$('.client-list').css('transform','translate3d(0,340px,0)');
 	});
 
 });

@@ -107,6 +107,7 @@ body {
 .work {
   background: #000;
   color: #fff;
+  overflow: hidden;
 }
 .white {
   color: #fff !important;
@@ -409,7 +410,7 @@ h1 a, h2 a, h3 a, h4 a {
   font-size: 68px;
   font-weight: 800;
   line-height: 60px;
-  margin-left: 60px;
+  margin-left: 140px;
   text-transform: uppercase;
   width: 405px;
 }
@@ -495,13 +496,14 @@ h1 a, h2 a, h3 a, h4 a {
 .client-list {
   background: rgba(0,0,0,0.8);
   bottom: 0;
+  box-sizing: border-box;
   display: block;
   height: 321px;
   left: 0;
   padding: 30px 0;
   position: absolute;
   text-align: center;
-  transform: translate3d(0, 321px, 0);
+  transform: translate3d(0, 340px, 0);
   transition: transform .3s ease-out;
   width: 100%;
 }
@@ -763,4 +765,87 @@ body.about .footer {
 }
 .fadeIn {
   animation-name: fadeIn;
+}
+
+/*mobile styling*/
+@media screen and (max-width: 480px) {
+  .logo {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  #nav-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+  }
+  nav {
+    transition: none;
+  }
+  .menu {
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    height: 100vh;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+  }
+  .show {
+    width: 100vw;
+  }
+  .show .menu {
+    position: fixed;
+    z-index: 3;
+  }
+  .menu > li > a {
+    border-top: none;
+    color: #fff;
+    font-size: 42px;
+  }
+  .menu li:first-of-type {
+    margin-top: 20%;
+  }
+  .main .big-text {
+    font-size: 52px;
+    margin-left: 20px;
+  }
+  .teaser h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .teaser li h3 a {
+    height: 50px;
+  }
+  .project-image-holder {
+    width: 270vw;
+  }
+  .client-title {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .single-project .text {
+    left: 5%;
+    top: 10%;
+    width: 90%;
+  }
+  .single-project .text .headline {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .single-project .text .subtitle {
+    margin-bottom: 30px;
+  }
+  .single-project figure {
+    left: -50%;
+    opacity: 0.5;
+    right: auto;
+  }
+  .single-project figure img {
+    height: 100vh;
+    max-width: none;
+  }
 }

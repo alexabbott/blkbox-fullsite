@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-  <main class="main animated fadeIn" role="main">
+  <main class="main animated fadeInUp" role="main">
 
 	<h4 class="work-title">Work.</h4>
 
