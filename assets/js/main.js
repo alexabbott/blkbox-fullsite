@@ -47,10 +47,10 @@ $(document).ready(function(){
 
 	// show hide client list
 	$('.client-title').on('click', function() {
-		$('.client-list').css('transform','translate3d(0,20px,0)');
+		$('.client-list').css('transform','translate3d(0,25px,0)');
 	});
 	$('.clients-close').on('click', function() {
-		$('.client-list').css('transform','translate3d(0,340px,0)');
+		$('.client-list').css('transform','translate3d(0,350px,0)');
 	});
 
 });
