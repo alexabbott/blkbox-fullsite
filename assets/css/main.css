@@ -355,7 +355,7 @@ nav {
 /* Headings
 -------------------------------------------------- */
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
   line-height: 1.25em;
   margin-bottom: .5em;
@@ -644,6 +644,7 @@ body.about footer .colophon .right a {
   height: auto;
 }
 #aboutGram h1 {
+  font-size: 2em;
   margin: .5em 0 0 0;
 }
 #aboutGram span {
