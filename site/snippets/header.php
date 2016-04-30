@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 </head>
-<body>
+<body class="<?php echo $page->title()->lower()->html() ?>">
 
   <header class="header cf" role="banner">
     <a class="logo animated fadeInDown" href="<?php echo url() ?>">
