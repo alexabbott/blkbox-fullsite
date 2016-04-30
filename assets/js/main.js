@@ -9,19 +9,28 @@ $(document).ready(function(){
 	// expand square
 	var divMouseDown;
 	$('.square').mousedown(function() {
-		$(this).css({'width':'50vw','height':'50vh'});
+		// $(this).css({'width':'50vw','height':'50vh'});
+		$(this).css({'transform':'translate(-50%, -76%) scale(5)'});
 		divMouseDown = setTimeout(function() {
-			$('.square').css({'width':'100vw','height':'100vh'});
+			$('.square').css({'transform':'translate(-50%, -76%) scale(20)'});
+			// $('.square').css({'width':'100vw','height':'100vh'});
 		}, 100);
 	});
 	$('.square').mouseup(function() {
 		if (divMouseDown) {
 			clearTimeout(divMouseDown);
 		}
-		if ($('.square').css('width') !== ($(document).width().toString() + 'px') ) {
-			$('.square').css({'width':'100px','height':'100px'});
+		// if ($('.square').css('width') !== ($(document).width().toString() + 'px') ) {
+		if ($('.square').css('transform') !== "matrix(20, 0, 0, 20, -50, -76)") {
+			// $('.square').css({'width':'100px','height':'100px'});
+			$('.square').css({'transform':'translate(-50%, -76%) scale(1)'});
 		} else {
-			$('.square').css({'width':'100vw','height':'100vh'});
+			// $('.square').css({'width':'100vw','height':'100vh'});
+			$('.square').css({'transform':'translate(-50%, -76%) scale(20)'});
+			window.location.pathname += 'work';
+		}
+
+		if ($('.square').css('transform') == "matrix(20, 0, 0, 20, -50, -76)") {
 			window.location.pathname += 'work';
 		}
 	});
@@ -33,6 +42,8 @@ $(document).ready(function(){
 		$('body').addClass('about');
 	} else if (window.location.pathname.indexOf('contact') > -1) {
 		$('body').addClass('contact');
+	} else if (window.location.pathname.indexOf('capabilities') > -1) {
+		$('body').addClass('capabilities');
 	} else {
 		$('body').addClass('home');
 	}

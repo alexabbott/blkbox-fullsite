@@ -192,7 +192,7 @@ nav {
   width: 0;
 }
 .show {
-  width: 330px;
+  width: 500px;
 }
 .menu a {
   color: #000;
@@ -442,7 +442,7 @@ h1 a, h2 a, h3 a, h4 a {
   top: 242%;
   width: 100px;
   transform: translate(-50%, -76%);
-  transition: width 1s, height 1s;
+  transition: width 1s, height 1s, transform 1s;
 }
 
 .main .hold-down .square.expand, .main .hold-down .square.expanded {
@@ -466,7 +466,7 @@ h1 a, h2 a, h3 a, h4 a {
   display: none;
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 46%;
   transform: translate(-50%, -50%);
   width: 75vw;
   z-index: -1;
@@ -612,6 +612,23 @@ h1 a, h2 a, h3 a, h4 a {
   position: fixed;
   right: -20%;
   top: 0;
+}
+
+
+/* Capabilities
+-------------------------------------------------- */
+.capabilities-holder {
+  border: 20px solid #000;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: 3.4em;
+  height: 600px;
+  line-height: 0.8em;
+  margin: -50px auto 0 auto;
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 600px;
 }
 
 

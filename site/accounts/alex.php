@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - capabilities
   - work/facebook
   - work/beachbody
   - work/piercing-pagoda
   - work/frenchs
-  - work/franks
