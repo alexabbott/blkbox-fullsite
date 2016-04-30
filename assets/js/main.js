@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// toggle nav
 	$('#nav-icon').click(function(){
 		$(this).toggleClass('open');
-		$('nav').toggleClass('show');
+		$('.menu').toggleClass('show');
 	});
 
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
 		}
 
 		if ($('.square').css('transform') == "matrix(20, 0, 0, 20, -50, -76)") {
-			window.location.pathname += 'work';
+			window.location.pathname += 'about';
 		}
 	});
 
