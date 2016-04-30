@@ -16,6 +16,7 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <?php echo css('assets/css/animate.css') ?>
   <?php echo css('assets/css/main.css') ?>
+  <?php echo css('assets/css/mobile.css') ?>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 </head>

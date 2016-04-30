@@ -644,7 +644,7 @@ h1 a, h2 a, h3 a, h4 a {
   font-size: 3.4em;
   height: 600px;
   line-height: 0.8em;
-  margin: -50px auto 0 auto;
+  margin: -20px auto 0 auto;
   padding: 60px 20px 20px 20px;
   text-align: center;
   text-transform: uppercase;
@@ -832,93 +832,4 @@ body.about .footer {
 }
 .fadeIn {
   animation-name: fadeIn;
-}
-
-/*mobile styling*/
-@media screen and (max-width: 480px) {
-  .logo {
-    left: 0;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-  }
-  #nav-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 4;
-  }
-  nav {
-    transition: none;
-  }
-  .menu {
-    background: rgba(0,0,0,0.8);
-    color: #fff;
-    height: 100vh;
-    left: 50%;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 100vw;
-  }
-  .show {
-    width: 100vw;
-  }
-  .show .menu {
-    position: fixed;
-    z-index: 3;
-  }
-  .menu > li > a {
-    border-top: none;
-    color: #fff;
-    font-size: 42px;
-  }
-  .menu li:first-of-type {
-    margin-top: 40%;
-  }
-  .main .big-text {
-    font-size: 52px;
-    margin-left: 20px;
-  }
-  .teaser h3 {
-    font-size: 32px;
-    line-height: 32px;
-  }
-  .teaser li h3 a {
-    height: 50px;
-  }
-  .project-image-holder {
-    width: 270vw;
-  }
-  .client-title {
-    font-size: 20px;
-    margin-top: 30px;
-  }
-  .client-list img {
-    width: 75px;
-  }
-  .single-project .text {
-    left: 5%;
-    top: 10%;
-    width: 90%;
-  }
-  .single-project .text .headline {
-    font-size: 32px;
-    line-height: 32px;
-  }
-  .single-project .text .subtitle {
-    margin-bottom: 30px;
-  }
-  .single-project figure {
-    left: -50%;
-    opacity: 0.5;
-    right: auto;
-  }
-  .single-project figure img {
-    height: 100vh;
-    max-width: none;
-  }
-  footer .copyright {
-    display: none;
-  }
 }
