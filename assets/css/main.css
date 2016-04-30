@@ -892,28 +892,66 @@ body.contact footer {
 .contactContent {
   width: 100vw;
   min-height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.6;
+  overflow: hidden;
+}
+.contactContent .imgCont {
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+.contactContent .imgCont img {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  opacity: 0.5;
+}
+.contactContent .background-mesh {
+  background: url('https://i.imgur.com/oZQL8qp.png');
+  background-size: 66%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .contactContent .pageTitle {
-  margin-top: 3em;
-  font-size: 4vw;
+  margin-top: 2em;
+  font-size: 3.5em;
   opacity: 1;
 }
 #boxCont {
   max-width: 800px;
+  width: 100%;
   margin: 0 auto;
+  flex-flow: row wrap;
 }
-#boxCont span {
-  width: 30vw;
-  height: 30vw;
-  max-width: 250px;
-  max-height: 250px;
+#boxCont > span {
+  max-width: 240px;
+  max-height: 240px;
+  min-width: 240px;
+  min-height: 240px;
   border: 5px solid white;
+  box-sizing: border-box;
+  margin: 10px;
+  color: white;
+  flex: 1 0 33%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#boxCont > span:hover {
+  color: red;
+  border: 5px solid red;
 }
 
+#contactCTA {
+  margin-top: 3em;
+}
 /* Next/Prev nav
 -------------------------------------------------- */
 .nextprev {
