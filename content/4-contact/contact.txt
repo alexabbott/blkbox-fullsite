@@ -1,19 +1,65 @@
-Title: Contact
+Title: Contact Us
 
 ----
 
-Text:
+Text: 
 
-## Get in touch
+----
 
-- (link: http://getkirby.com/support text: Kirby's support page)
-- (link: http://forum.getkirby.com text: Kirby's forum)
-- (link: http://github.com/getkirby text: Kirby on Github)
-- <support@getkirby.com>
+Subtext: 
 
-## Follow us on Twitter
+----
 
-- Follow Kirby on Twitter (twitter: @getkirby)
-- Follow Bastian on Twitter (twitter: @bastianallgeier)
-- Follow Nico on Twitter (twitter: @distantnative)
-- Follow Sascha on Twitter (twitter: @sashtown)
+Header: Contact Us
+
+----
+
+Box1: 
+
+# Be 
+# Hired
+
+----
+
+Box1-sub: Are you BLKBOX?
+
+----
+
+Box2: 
+
+# Hire
+# Us
+
+----
+
+Box2-sub: Ready to get
+
+----
+
+Box3: 
+
+# Gen
+# Inq
+
+----
+
+Box3-sub: How about a drink with us?
+
+----
+
+Box1sub: Are you BLKBOX?
+
+----
+
+Box2sub: Ready to get started?
+
+----
+
+Box3sub: How about a drink with us?
+
+----
+
+Cta: 
+
+Join our mailing list
+Get connected monthly
