@@ -2,14 +2,30 @@
 /*mobile styling*/
 @media screen and (max-width: 480px) {
 
+/* GLOBAL
+-------------------------------------------------- */
+  body {
+    overflow-x: hidden;
+  }
 
 /* Header
 -------------------------------------------------- */
+  .header {
+    background: #000;
+  }
   .logo {
+    color: #fff;
     left: 0;
+    padding-top: 1.2em;
     position: absolute;
     top: 0;
     z-index: 2;
+  }
+  #nav-icon {
+    margin: 1.3em 1.5em 0 30px;
+  }
+  #nav-icon span {
+    background: #fff;
   }
 
 
@@ -24,22 +40,9 @@
   nav {
     transition: none;
   }
-  .menu {
-    background: rgba(0,0,0,0.8);
-    color: #fff;
-    height: 100vh;
-    left: 50%;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 100vw;
-  }
-  .show {
-    width: 100vw;
-  }
-  .show .menu {
-    position: fixed;
-    z-index: 3;
+  .menu.show {
+    left: 0;
+    padding: 0;
   }
   .menu > li > a {
     border-top: none;
@@ -53,14 +56,46 @@
 
 /* HOME
 -------------------------------------------------- */
+  .home {
+    height: auto;
+  }
   .main .big-text {
     font-size: 52px;
     margin-left: 20px;
+  }
+  .home video {
+    width: 250%;
+    margin-left: -50%;
+  }
+  .home .text {
+    margin-top: -30px;
+  }
+
+/* CAPABILITIES
+-------------------------------------------------- */
+  .capabilities {
+    height: 210vh;
+  }
+  .capabilities .top-section {
+    background-position-x: 50% !important;
+    height: 70vh;
+  }
+  .capabilities h1 {
+    font-size: 2em;
+    left: 40px;
+    top: 100px;
+    width: 56%;
+  }
+  .capabilities .left-side, .capabilities .right-side {
+    width: 100%;
   }
 
 
 /* PROJECTS
 -------------------------------------------------- */
+  .work {
+    overflow: hidden;
+  }
   .teaser h3 {
     font-size: 32px;
     line-height: 32px;
@@ -80,7 +115,8 @@
   }
   .single-project .text {
     left: 5%;
-    top: 10%;
+    padding-top: 60px;
+    top: 78%;
     width: 90%;
   }
   .single-project .text .headline {
@@ -103,6 +139,17 @@
 
 /* Footer
 -------------------------------------------------- */
+
+  .home .footer {
+    bottom: -290px;
+    color: #000;
+  }
+  .home .footer .colophon a {
+    color: #000;
+  }
+  .footer, .footer .left, .footer .colophon a {
+    color: #fff;
+  }
   footer .copyright {
     display: none;
   }

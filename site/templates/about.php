@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main id="AboutContent" class="main text-center" role="main">
+<main id="AboutContent" class="main text-center animated fadeInUp" role="main">
 
   <div id="aboutText" class="text-center">
     <h2 class="white">Our Beliefs</h2>

@@ -186,12 +186,13 @@ body {
 }
 .logo {
   display: block;
+  float: left;
   font-weight: 600;
   margin-bottom: 0em;
   padding: 1.5em;
   transition: color 0.5s ease-out;
 }
-.work .logo {
+.work .logo, .capabilities .logo {
   color: #fff;
 }
 .logo img {
@@ -208,35 +209,55 @@ nav {
   overflow: hidden;
   margin-top: 1.5em;
   text-transform: uppercase;
-  transition: width .5s ease-in-out;
   width: 0;
 }
-.show {
-  width: 500px;
+.menu {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .5s ease-out;
+}
+.menu.show {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  height: 100%;
+  opacity: 1;
+  padding: 200px;
+  pointer-events: initial;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: opacity .5s ease-out;
+  width: 100%;
+  z-index: 3;
 }
 .menu a {
-  color: #000;
-  display: block;
-}
-.work .menu a {
+  box-sizing: border-box;
   color: #fff;
+  display: inline-block;
+  font-size: 4em;
 }
 .menu a:hover {
-  color: red;
+  box-sizing: border-box;
+  color: #fff;
+  border-bottom: 4px solid #ff0000;
   text-decoration: none;
 }
 .menu .active {
-  color: red;
+  color: #fff;
 }
 .menu li {
+  border-bottom: none;
+  display: block;
   list-style: none;
 }
 .menu > li {
   position: relative;
 }
 .menu > li > a {
-  border-top: 1px solid #ddd;
+  color: #fff;
   font-weight: 600;
+  height: 85px;
   padding: .35em 0;
 }
 .submenu {
@@ -287,6 +308,7 @@ nav {
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  z-index: 4;
 }
 
 #nav-icon span {
@@ -307,7 +329,7 @@ nav {
   transition: .25s ease-in-out;
 }
 
-.work #nav-icon span {
+.work #nav-icon span, .capabilities #nav-icon span {
   background: #fff;
 }
 
@@ -323,6 +345,10 @@ nav {
 
 #nav-icon span:nth-child(4) {
   top: 36px;
+}
+
+#nav-icon.open span {
+  background: #fff;
 }
 
 #nav-icon.open span:nth-child(1) {
@@ -349,27 +375,6 @@ nav {
   left: 50%;
   top: 18px;
   width: 0%;
-}
-
-
-@media screen and (min-width: 40em) {
-  .logo {
-    float: left;
-  }
-  .menu {
-    float: right;
-    margin-right: -1em;
-  }
-  .menu > li {
-    float: left;
-  }
-  .menu > li > a {
-    border: 0;
-    padding: .35em 1em;
-  }
-  .menu > li:hover .submenu {
-    display: block;
-  }
 }
 
 
@@ -409,6 +414,22 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* Main
 -------------------------------------------------- */
+.home .logo {
+  color: #fff;
+  position: absolute;
+  z-index: 5;
+}
+.home #nav-icon span {
+  background: #fff;
+  z-index: 5;
+}
+.home .text {
+  margin-top: 150px;
+}
+.home .main {
+  margin-bottom: 150px;
+}
+
 .main {
   padding-bottom: 1.5em;
 }
@@ -426,6 +447,33 @@ h1 a, h2 a, h3 a, h4 a {
   border-color: #222;
 }
 
+.home .video-holder {
+  display: block;
+  height: 100vh;
+  margin-top: -105px;
+  position: relative;
+  width: 100vw;
+}
+
+.home video {
+  display: block;
+  height: 105%;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+}
+
+.home .video-holder h3 {
+  bottom: 30px;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
 .main .big-text {
   font-size: 68px;
   font-weight: 800;
@@ -438,6 +486,7 @@ h1 a, h2 a, h3 a, h4 a {
 .main .hold-down {
   font-size: 32px;
   font-weight: 800;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
 }
@@ -637,18 +686,97 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* Capabilities
 -------------------------------------------------- */
-.capabilities-holder {
-  border: 20px solid #000;
-  box-sizing: border-box;
+.capabilities {
+  background: #000;
+  color: #fff;
+  height: auto;
+}
+.capabilities .logo {
+  position: absolute;
+  z-index: 3;
+}
+.capabilities h1 {
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-size: 4em;
   font-weight: 800;
-  font-size: 3.4em;
-  height: 600px;
-  line-height: 0.8em;
-  margin: -20px auto 0 auto;
-  padding: 60px 20px 20px 20px;
+  left: 75px;
+  line-height: 1em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 150px;
+  width: 450px;
+}
+.capabilities h1 p {
+  display: inline;
+}
+.capabilities h1 span {
+  color: #ff0000;
+}
+.capabilities .top-section {
+  background-size: cover !important;
+  height: 80vh;
+  margin-top: -105px;
+  width: 100%;
+}
+.capabilities .bottom-section {
+  display: block;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+.capabilities-image {
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  width: 100%;
+}
+.capabilities .left-side {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+.capabilities .right-side {
+  display: inline-block;
+  float: right;
+  text-align: center;
+  width: 50%;
+}
+.capabilities .box {
+  border: 6px solid #fff;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  font-weight: 700;
+  height: 200px;
+  margin: 50px auto 0 auto;
+  padding: 33px 10px 10px 10px;
   text-align: center;
   text-transform: uppercase;
-  width: 600px;
+  width: 200px;
+}
+.capabilities .right-side .box {
+  padding: 35px 30px 10px 30px;
+}
+.capabilities .subtext {
+  font-size: 0.7em;
+  font-weight: 100;
+  line-height: 1.3em;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  width: 315px;
+}
+.capabilities .lets-talk {
+  border-bottom: 4px solid #ff0000;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.capabilities .lets-talk:hover {
+  border-bottom: 4px solid #ff0000;
 }
 
 
@@ -816,7 +944,7 @@ body.contact footer {
 .footer-logo {
   font-weight: 600;
 }
-.work .footer {
+.work .footer, .capabilities .footer {
   color: #fff;
 }
 .copyright {
@@ -835,6 +963,9 @@ body.contact footer {
 .colophon a b {
   color: red;
   padding-left: .25em;
+}
+.capabilities .colophon .right a {
+  color: #fff;
 }
 
 body.about .footer {
