@@ -7,13 +7,13 @@ $(document).ready(function(){
 
 	// expand square
 	var divMouseDown;
-	$('.square').mousedown(function() {
+	$('.square').on('mousedown touchstart', function() {
 		$(this).css({'transform':'translate(-50%, -76%) scale(5)'});
 		divMouseDown = setTimeout(function() {
 			$('.square').css({'transform':'translate(-50%, -76%) scale(20)'});
 		}, 100);
 	});
-	$('.square').mouseup(function() {
+	$('.square').on('mouseup touchend', function() {
 		if (divMouseDown) {
 			clearTimeout(divMouseDown);
 		}

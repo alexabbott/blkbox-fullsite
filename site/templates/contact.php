@@ -10,7 +10,7 @@
 
   <div id="boxCont" class="flex justify-center relative">
     <span class="box pointer">
-      <h1 class="uppercase"><?php echo $page->box1()->html() ?></h1>
+      <h1 class="uppercase"><?php echo $page->box1()->kirbytext() ?></h1>
       <span class="block textCenter"><?php echo $page->box1Sub()->html() ?></span>
     </span>
     <span class="box pointer">

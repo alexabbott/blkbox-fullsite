@@ -1,4 +1,4 @@
-Title: Contact Us
+Title: Contact
 
 ----
 
@@ -16,8 +16,8 @@ Header: Contact Us
 
 Box1: 
 
-# Be 
-# Hired
+# BE
+# HIRED
 
 ----
 
