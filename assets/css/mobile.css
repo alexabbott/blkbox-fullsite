@@ -2,6 +2,11 @@
 /*mobile styling*/
 @media screen and (max-width: 480px) {
 
+/* GLOBAL
+-------------------------------------------------- */
+  body {
+    overflow-x: hidden;
+  }
 
 /* Header
 -------------------------------------------------- */
@@ -69,15 +74,16 @@
 /* CAPABILITIES
 -------------------------------------------------- */
   .capabilities {
-    height: 175vh;
+    height: 210vh;
   }
   .capabilities .top-section {
     background-position-x: 50% !important;
-    height: 50vh;
+    height: 70vh;
   }
   .capabilities h1 {
     font-size: 2em;
     left: 40px;
+    top: 100px;
     width: 56%;
   }
   .capabilities .left-side, .capabilities .right-side {
@@ -87,6 +93,9 @@
 
 /* PROJECTS
 -------------------------------------------------- */
+  .work {
+    overflow: hidden;
+  }
   .teaser h3 {
     font-size: 32px;
     line-height: 32px;
@@ -106,7 +115,8 @@
   }
   .single-project .text {
     left: 5%;
-    top: 10%;
+    padding-top: 60px;
+    top: 78%;
     width: 90%;
   }
   .single-project .text .headline {
