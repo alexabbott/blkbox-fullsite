@@ -41,6 +41,7 @@
     transition: none;
   }
   .menu.show {
+    height: 100vh;
     left: 0;
     padding: 0;
   }
