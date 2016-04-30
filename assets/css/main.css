@@ -89,7 +89,7 @@ a:hover {
 -------------------------------------------------- */
 html {
   font-family: "futura-pt", sans-serif;
-  height: 101%;
+  height: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -654,20 +654,28 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* About
 -------------------------------------------------- */
-body.about {
+body.about,
+body.contact {
   background: rgba(0,0,0,1);
-  height: auto;
 }
-body.about .header a {
+body.about .header a,
+body.contact .header a {
   color: rgba(255,255,255,1) !important;
 }
-body.about .header a:hover {
+body.about .header a:hover,
+body.contact  .header a:hover {
   color: rgba(255,0,0,1) !important;
 }
-body.about #nav-icon span {
+body.about #nav-icon span,
+body.contact #nav-icon span {
   background: rgba(255,255,255,1) !important;
 }
-body.about footer .colophon .right a {
+body.about footer .colophon .right a,
+body.contact footer .colophon .right a {
+  color: #fff;
+}
+body.about footer .copyright,
+body.contact footer .copyright {
   color: #fff;
 }
 #AboutContent {
@@ -737,37 +745,46 @@ body.about footer .colophon .right a {
 #AboutContent .staffMember h2 {
   font-size: 1em;
 }
-/*#aboutVid {
-  width: 100vw;
-  height: 56.25vw;
-  max-width: 856px;
-  max-height: 481.5px;
-  margin: 0 auto;
-  background: pink;
-  position: relative;
-}
-#aboutVid iframe {
-  width: 100%;
-  height: 100%;
-}
-#vidStill {
-  width: 100%;
-  height: 100%;
-}
-#vidStill img {
-  width: 100%;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  position: absolute;
-  z-index: 0;
-}
-#vidStill svg {
-  margin: auto;
-  position: relative;
-  z-index: 1;
-}
-*/
 
+/* Contact
+-------------------------------------------------- */
+body.contact {
+  background: rgba(0,0,0,1);
+}
+body.contact header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+body.contact footer {
+  z-index: 3;
+  position: absolute;
+}
+
+.contactContent {
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.6;
+  position: absolute;
+}
+.contactContent .pageTitle {
+  margin-top: 3em;
+  font-size: 4vw;
+  opacity: 1;
+}
+#boxCont {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#boxCont span {
+  width: 30vw;
+  height: 30vw;
+  max-width: 250px;
+  max-height: 250px;
+  border: 5px solid white;
+}
 
 /* Next/Prev nav
 -------------------------------------------------- */
