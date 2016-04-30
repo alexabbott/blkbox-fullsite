@@ -112,6 +112,12 @@ body {
 .white {
   color: #fff !important;
 }
+.red {
+  color: rgba(246,64,60,1) !important;
+}
+.grey {
+  color: rgba(129,109,110,1) !important;
+}
 .bg-white {
   background: #fff !important;
 }
@@ -119,8 +125,11 @@ body {
 .uppercase {
   text-transform: uppercase !important;
 }
-.textCenter {
+.text-center {
   text-align: center !important;
+}
+.bold {
+  font-weight: 700 !important;
 }
 
 .block {
@@ -129,7 +138,7 @@ body {
 .inline {
   display: inline !important;
 }
-.inlineBlock {
+.inline-block {
   display: inline-block !important;
 }
 .none {
@@ -139,18 +148,29 @@ body {
   display: flex !important;
 }
 
-.absolute {
-  position: absolute;
+.flexGrow1 {
+  flex: 1 0 auto;
+}
+.column {
+  flex-flow: column;
 }
 
 
-.justifyAround {
+.absolute {
+  position: absolute !important;
+}
+.relative {
+  position: relative !important;
+}
+
+
+.justify-around {
   justify-content: space-around !important;
 }
-.justifyBetween {
+.justify-between {
   justify-content: space-between !important;
 }
-.justifyCenter {
+.justify-center {
   justify-content: center !important;
 }
 
@@ -656,7 +676,6 @@ body.about footer .colophon .right a {
   color: rgba(255,255,255,1);
   max-width: 856px;
 }
-
 #AboutContent h2 {
   animation-duration: 1s;
   font-weight: 600;
@@ -664,13 +683,26 @@ body.about footer .colophon .right a {
 #AboutContent > span {
   font-weight: 600;
 }
-
+#aboutText hr {
+  width: 15px;
+  margin: 4px;
+  height: 1px;
+  border: none;
+}
+#aboutText p {
+  margin-top: 1em;
+}
+#aboutText .large {
+  font-size: 3.5em;
+  line-height: 1em;
+}
 #aboutGram {
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   max-width: 856px;
 }
 #photoStream {
   height: 200px;
+  margin: 2em 0;
 }
 #photoStream .imgCont {
   width: 18%;
@@ -686,8 +718,26 @@ body.about footer .colophon .right a {
 #aboutGram span {
   font-size: .8em;
 }
+#AboutContent #letsTalk {
+  border-bottom: 3px solid rgba(255,0,0,1);
+  margin: 0 auto;
+}
+#AboutContent .staffMember {
+  width: 20%;
+  height: 300px;
+  background: pink;
+}
+#AboutContent .staffMember img {
+  height: 100%;
+  width: auto;
+}
+#AboutContent .staffMember .staffId {
 
-#aboutVid {
+}
+#AboutContent .staffMember h2 {
+  font-size: 1em;
+}
+/*#aboutVid {
   width: 100vw;
   height: 56.25vw;
   max-width: 856px;
@@ -716,7 +766,7 @@ body.about footer .colophon .right a {
   position: relative;
   z-index: 1;
 }
-
+*/
 
 
 /* Next/Prev nav

@@ -1,20 +1,37 @@
 <?php snippet('header') ?>
-  <main id="AboutContent" class="main" role="main">
+  <main id="AboutContent" class="main text-center" role="main">
 
-    <div id="aboutText">
-      <h2 class="fadeIn">Our Beliefs</h2>
-      <span class="block uppercase">What we know:</span>
-      <p>Crucifix locavore polaroid trust fund, brunch kinfolk pour-over retro bespoke. Meggings actually meh everyday carry cliche. Williamsburg keffiyeh craft beer, green juice 3 wolf moon beard trust fund VHS. Put a bird on it yuccie kogi schlitz roof party, skateboard tattooed lomo cronut food truck kombucha direct trade. Mustache fanny pack distillery, next level mixtape typewriter cardigan gentrify ennui etsy migas dreamcatcher tumblr asymmetrical. Mixtape fingerstache lomo keytar. </p>
-      <p>Banh mi taxidermy beard viral, authentic asymmetrical next level messenger bag pinterest. Austin keytar 8-bit, skateboard gluten-free microdosing brunch kickstarter vinyl chicharrones. Green juice asymmetrical vegan austin, pork belly mixtape vinyl four dollar toast chillwave pop-up man braid offal. 3 wolf moon YOLO man braid, fingerstache shabby chic sriracha freegan small batch iPhone tacos normcore. Paleo lumbersexual pabst gentrify, banjo umami franzen PBR&B neutra. Green juice heirloom hoodie tacos neutra pork belly flexitarian austin plaid, cred poutine 8-bit lumbersexual PBR&B. Synth cray salvia, pork belly four dollar toast affogato small batch.</p>
+    <div id="aboutText" class="text-center">
+      <h2 class="white">Our Beliefs</h2>
+      <span class="block">Here's what we know:</span>
+      <span class="block bold">Marketing, Advertising, Content.</span>
+      <span class="block">It works when the person who's meant to see it, see's it, likess it, and believes it was made for them.</span>
+      <span class="block">We have one true goal.</span>
+      <span class="block">That is to make everyone feel understood.</span>
+      <p>BLKBOX is your access to the mystifying, complicated, open-minded and world-changing generation - millenials. We're young, but we're experienced. Not know-it-alls. In fact we don't know all of the answers, but we're gonna have a hell of a time finding them.</p>
+      <p class="uppercase bold large">We're unapologetic,<br>not arrogant.<br>We're creators,<br>not fluffers<br>We are passionate AF.<br>We know one thing is true.</p>
+      <h3 class="large uppercase bold">You have to<br><span class="uppercase red bold">get uncomfortable</span><br>to grow<span class="red">.</span></h3>
     </div>
 
-    <div id="aboutGram" class="textCenter">
-      <div id="photoStream" class="flex justifyBetween"></div>
-      <h1 class="uppercase">Instagram</h1>
-      <span>catch us up on the gram</span>
+    <div id="aboutStaff" class="text-center flex justify-between">
+      <?php
+        $staff = array("First Guy"=>"35", "First Woman"=>"38", "Fourth Man"=>"14", "Next Woman"=>"??");
+
+        foreach($staff as $member => $member_age) {
+          echo '<span class="staffMember flex column">
+                  <span class="imgCont relative flexGrow1">
+                    <img class="absolute" src="http://i.imgur.com/9oaBK0b.png"/>
+                  </span>
+                  <span class="staffId">
+                    <h2>' . $member . '</h2>
+                    <h3>' . $member_age . '</h3>
+                  </span>
+                </span>';
+        }
+      ?>
     </div>
 
-    <div id="aboutVid">
+<!--     <div id="aboutVid">
       <div id="YT_player" class="absolute"></div>
       <div id="vidStill" class="flex pointer">
         <img src="/blkbox/assets/images/frenchs.jpg"/>
@@ -23,7 +40,15 @@
           <path d="M40 35 V65 L65 50 L40 35" stroke-width="0" fill="white" />
         </svg>
       </div>
+    </div> -->
+
+    <div id="aboutGram" class="text-center">
+      <h1 class="uppercase bold">Instagram</h1>
+      <span>catch us up on the gram</span>
+      <div id="photoStream" class="flex justify-between"></div>
     </div>
+
+    <div id="letsTalk" class="inline-block bold">Let's Talk.</div>
 
   </main>
 
@@ -33,7 +58,7 @@
   //Instagram
   $.ajax({
     method: "GET",
-    url: "https://api.instagram.com/v1/users/1578228172/media/recent?access_token=1578228172.467ede5.04a6ec58145743cc851a2d64b58d9627&count=5",
+    url: "https://api.instagram.com/v1/users/1578228172/media/recent?access_token=1578228172.467ede5.04a6ec58145743cc851a2d64b58d9627&count=4",
     dataType: "jsonp",
     jsonpCallback: "jsoncallback",
     success: function(data) {
