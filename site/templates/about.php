@@ -3,19 +3,18 @@
 <main id="AboutContent" class="main text-center animated fadeInUp" role="main">
 
   <div id="aboutText" class="text-center">
-    <h2 class="white">Our Beliefs</h2>
-    <span class="block">Here's what we know:</span>
-    <span class="block bold">Marketing, Advertising, Content.</span>
-    <span class="block">It works when the person who's meant to see it, see's it, likess it, and believes it was made for them.</span>
-    <span class="block">We have one true goal.</span>
-    <span class="block">That is to make everyone feel understood.</span>
-    <p>BLKBOX is your access to the mystifying, complicated, open-minded and world-changing generation - millenials. We're young, but we're experienced. Not know-it-alls. In fact we don't know all of the answers, but we're gonna have a hell of a time finding them.</p>
-    <p class="uppercase bold large">We're unapologetic,<br>not arrogant.<br>We're creators,<br>not fluffers<br>We are passionate AF.<br>We know one thing is true.</p>
-    <h3 class="large uppercase bold">You have to<br><span class="uppercase red bold">get uncomfortable</span><br>to grow<span class="red">.</span></h3>
+    <h2 class="white uppercase"><?php echo $page->headline()->html() ?></h2>
+    <?php echo $page->block1()->kirbytext() ?>
+    <div id="manifesto">
+      <?php echo $page->manifesto()->kirbytext() ?>
+    </div>
+    <?php echo $page->thingWeKnow()->kirbytext() ?>
   </div>
 
-  <div id="aboutStaff" class="text-center flex justify-between">
+  <div id="aboutStaff" class="text-center flex justify-center">
     <?php
+      echo $page->staffHeader()->kirbytext();
+
       $staff = array("First Guy"=>"35", "First Woman"=>"38", "Fourth Man"=>"14", "Next Woman"=>"??");
 
       foreach($staff as $member => $member_age) {
@@ -33,12 +32,11 @@
   </div>
 
   <div id="aboutGram" class="text-center">
-    <h1 class="uppercase bold">Instagram</h1>
-    <span>catch us up on the gram</span>
+    <?php echo $page->gramTag()->kirbytext() ?>
     <div id="photoStream" class="flex justify-between"></div>
   </div>
 
-  <div id="letsTalk" class="inline-block bold">Let's Talk.</div>
+  <div id="letsTalk" class="inline-block bold"><a href="./contact">Let's Talk.</a></div>
 
 </main>
 
