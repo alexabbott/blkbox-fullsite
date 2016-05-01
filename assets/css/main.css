@@ -851,7 +851,6 @@ body.contact footer .copyright {
   background: rgba(0,0,0,1);
   margin: 0 auto;
   color: rgba(255,255,255,1);
-  max-width: 856px;
 }
 #AboutContent h2 {
   animation-duration: 1s;
@@ -860,59 +859,74 @@ body.contact footer .copyright {
 #AboutContent > span {
   font-weight: 600;
 }
-#aboutText hr {
-  width: 15px;
-  margin: 4px;
-  height: 1px;
-  border: none;
+#manifesto {
+  margin: 2em auto;
+}
+#aboutText h1 {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
 }
 #aboutText p {
-  margin-top: 1em;
+  max-width: 800px;
+  margin: 1em auto;
 }
 #aboutText .large {
   font-size: 3.5em;
   line-height: 1em;
 }
+#aboutStaff {
+  margin: 4em auto;
+  max-width: 1000px;
+  flex-flow: row wrap;
+}
+#aboutStaff > p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 100%;
+}
+#aboutStaff .staffMember {
+  width: 20%;
+  min-height: 200px;
+  min-width: 200px;
+  background: pink;
+  margin: 15px;
+}
+#aboutStaff .staffMember img {
+  height: 100%;
+  width: auto;
+}
+#aboutStaff .staffMember h2 {
+  font-size: 1em;
+}
 #aboutGram {
   margin: 100px auto 0 auto;
-  max-width: 856px;
+  max-width: 1200px;
 }
 #photoStream {
-  height: 200px;
   margin: 2em 0;
+  width: 120%;
+  transform: translateX(-10%);
 }
 #photoStream .imgCont {
-  width: 18%;
+  width: 22%;
 }
 #photoStream .imgCont img {
   width: 100%;
   height: auto;
 }
-#aboutGram h1 {
-  font-size: 2em;
-  margin: .5em 0 0 0;
-}
-#aboutGram span {
-  font-size: .8em;
+#aboutGram p {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 #AboutContent #letsTalk {
   border-bottom: 3px solid rgba(255,0,0,1);
   margin: 0 auto;
 }
-#AboutContent .staffMember {
-  width: 20%;
-  height: 300px;
-  background: pink;
-}
-#AboutContent .staffMember img {
-  height: 100%;
-  width: auto;
-}
-#AboutContent .staffMember .staffId {
-
-}
-#AboutContent .staffMember h2 {
-  font-size: 1em;
+#AboutContent #letsTalk a {
+  color: white !important;
 }
 
 /* Contact
@@ -971,6 +985,18 @@ body.contact footer {
   width: 100%;
   margin: 0 auto;
   flex-flow: row wrap;
+}
+#boxCont h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+#boxCont p {
+  text-align: center;
+  font-size: .9em;
+  margin: 0;
 }
 #boxCont > span {
   max-width: 240px;

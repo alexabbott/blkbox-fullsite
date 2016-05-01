@@ -2,7 +2,9 @@ Title: About
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+Text: 
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
 
 ## Lorem Ipsum
 In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
@@ -14,3 +16,78 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
 
 #### Lorem Ipsum
 In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+
+----
+
+Headline: Our Story
+
+----
+
+Block1: 
+
+Here's what we know:
+**Marketing, Advertising, Content.**
+It works when the person who's meant to see it, see's it, likess it, and believes it was made for them.
+We have one true goal.
+That is to make everyone feel understood.
+
+BLKBOX is your access to the mystifying, complicated, open-minded and world-changing generation - millenials. We're young, but we're experienced. Not know-it-alls. In fact we don't know all of the answers, but we're gonna have a hell of a time finding them.
+
+----
+
+Manifesto: 
+
+# WE'RE UNAPOLOGETIC,
+# NOT ARROGANT.
+# WE'RE CREATORS,
+# NOT FLUFFERS
+# WE ARE PASSIONATE AF.
+# WE KNOW ONE THING IS TRUE.
+
+----
+
+Thingweknow: 
+
+# YOU HAVE TO
+# <span class="red">GET UNCOMFORTABLE</span>
+# TO GROW<span class="red">.</span>
+
+----
+
+Staff1: 
+
+----
+
+Staff1title: 
+
+----
+
+Staff2: 
+
+----
+
+Staff2title: 
+
+----
+
+Staff3: 
+
+----
+
+Staff3title: 
+
+----
+
+Staff4: 
+
+----
+
+Staff4title: 
+
+----
+
+Gramtag: catch us up on the gram
+
+----
+
+Staffheader: Our Leadership
