@@ -41,6 +41,7 @@
     transition: none;
   }
   .menu.show {
+    height: 100vh;
     left: 0;
     padding: 0;
   }
@@ -116,7 +117,7 @@
   .single-project .text {
     left: 5%;
     padding-top: 60px;
-    top: 78%;
+    top: 14%;
     width: 90%;
   }
   .single-project .text .headline {
