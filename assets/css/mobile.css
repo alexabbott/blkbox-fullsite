@@ -136,6 +136,12 @@
     height: 100vh;
     max-width: none;
   }
+  .single-project .nextprev a.prev {
+    left: 40%;
+  }
+  .single-project .nextprev a.next {
+    left: 60%;
+  }
 
 
 /* Footer
