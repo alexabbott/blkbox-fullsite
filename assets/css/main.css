@@ -931,6 +931,18 @@ body.contact footer {
   margin: 0 auto;
   flex-flow: row wrap;
 }
+#boxCont h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+#boxCont p {
+  text-align: center;
+  font-size: .9em;
+  margin: 0;
+}
 #boxCont > span {
   max-width: 240px;
   max-height: 240px;
