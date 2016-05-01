@@ -19,9 +19,6 @@ $(document).ready(function(){
 		}
 		if ($('.square').css('transform') !== "matrix(20, 0, 0, 20, -50, -76)") {
 			$('.square').css({'transform':'translate(-50%, -76%) scale(1)'});
-		} else {
-			$('.square').css({'transform':'translate(-50%, -76%) scale(20)'});
-			window.location.pathname += 'work';
 		}
 
 		if ($('.square').css('transform') == "matrix(20, 0, 0, 20, -50, -76)") {

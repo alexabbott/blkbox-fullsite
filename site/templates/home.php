@@ -17,6 +17,7 @@
 	      <?php echo $page->sub()->kirbytext() ?>
 	      <div class="hold-down-text animated fadeIn"><?php echo $page->small()->kirbytext() ?></div>
 	      <div class="square"></div>
+        <div class="get-uncomfortable">get uncomfortable.</div>
   	  </div>
     </div>
 
