@@ -219,7 +219,7 @@ nav {
 .menu.show {
   background: rgba(0,0,0,0.8);
   color: #fff;
-  height: 100%;
+  height: 100vh;
   opacity: 1;
   padding: 200px;
   pointer-events: initial;
@@ -259,6 +259,9 @@ nav {
   font-weight: 600;
   height: 85px;
   padding: .35em 0;
+}
+.menu > li > a:hover {
+  color: #fff !important;
 }
 .submenu {
   display: none;
@@ -833,7 +836,7 @@ body.contact .header a {
 }
 body.about .header a:hover,
 body.contact  .header a:hover {
-  color: rgba(255,0,0,1) !important;
+  color: rgba(255,0,0,1);
 }
 body.about #nav-icon span,
 body.contact #nav-icon span {
@@ -933,6 +936,7 @@ body.contact footer .copyright {
 -------------------------------------------------- */
 body.contact {
   background: rgba(0,0,0,1);
+  overflow: hidden;
 }
 body.contact header {
   position: absolute;
