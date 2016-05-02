@@ -51,7 +51,7 @@
     font-size: 42px;
   }
   .menu li:first-of-type {
-    margin-top: 40%;
+    margin-top: 30%;
   }
 
 
@@ -66,16 +66,19 @@
   }
   .home video {
     width: 250%;
-    margin-left: -50%;
+    margin-left: -70%;
   }
   .home .text {
     margin-top: -30px;
+  }
+  .main .get-uncomfortable {
+    top: 180%;
   }
 
 /* CAPABILITIES
 -------------------------------------------------- */
   .capabilities {
-    height: 210vh;
+    height: 230vh;
   }
   .capabilities .top-section {
     background-position-x: 50% !important;
@@ -90,6 +93,9 @@
   .capabilities .left-side, .capabilities .right-side {
     width: 100%;
   }
+  .capabilities .subtext {
+    width: 100%;
+  }
 
 
 /* PROJECTS
@@ -97,12 +103,22 @@
   .work {
     overflow: hidden;
   }
+  .work .logo {
+    padding-top: 0.7em;
+  }
+  .work #nav-icon {
+    margin-top: 0.9em;
+  }
+  .work-title {
+    margin-bottom: 20px;
+    margin-top: -30px;
+  }
   .teaser h3 {
     font-size: 32px;
-    line-height: 32px;
+    line-height: 30px;
   }
   .teaser li h3 a {
-    height: 50px;
+    height: 35px;
   }
   .project-image-holder {
     width: 270vw;
@@ -117,7 +133,7 @@
   .single-project .text {
     left: 5%;
     padding-top: 60px;
-    top: 14%;
+    top: 16%;
     width: 90%;
   }
   .single-project .text .headline {

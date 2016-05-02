@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('#nav-icon').click(function(){
 		$(this).toggleClass('open');
 		$('.menu').toggleClass('show');
+		$('body').toggleClass('overflow');
 	});
 
 	// expand square
@@ -36,10 +37,16 @@ $(document).ready(function(){
 
 	// show hide client list
 	$('.client-title').on('click', function() {
-		$('.client-list').css('transform','translate3d(0,25px,0)');
+		$('.client-list').css('display','block');
+		setTimeout(function() {
+			$('.client-list').css('transform','translate3d(0,25px,0)');
+		}, 100);
 	});
 	$('.clients-close').on('click', function() {
 		$('.client-list').css('transform','translate3d(0,350px,0)');
+		setTimeout(function() {
+			$('.client-list').css('display','none');
+		}, 1000);
 	});
 
 });
