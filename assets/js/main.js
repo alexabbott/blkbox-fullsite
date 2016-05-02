@@ -4,6 +4,9 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 		$('.menu').toggleClass('show');
 		$('body').toggleClass('overflow');
+		$('main-container').toggleClass('overflow');
+		$('body').toggleClass('fixed');
+		$('main-container').toggleClass('fixed');
 	});
 
 	// expand square

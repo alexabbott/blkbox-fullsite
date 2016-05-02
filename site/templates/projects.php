@@ -2,7 +2,7 @@
 
   <main class="main animated fadeInUp" role="main">
 
-	<h4 class="work-title">Work.</h4>
+	<h4 class="work-title animated fadeIn">Work.</h4>
 
 	<?php snippet('projects') ?>
 

@@ -7,7 +7,7 @@
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.mp4" type="video/mp4">
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.webm" type="video/webm">
       </video>
-      <h3 class="animated fadeInUp">scroll down</h3>
+      <h3 class="animated fadeInUp scroll-down">scroll down</h3>
     </div>
 
     <div class="text">

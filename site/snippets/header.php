@@ -29,3 +29,5 @@
     </a>
     <?php snippet('menu') ?>
   </header>
+
+  <div class="main-container">

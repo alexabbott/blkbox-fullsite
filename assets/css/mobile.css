@@ -1,10 +1,10 @@
 
 /*mobile styling*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
 
 /* GLOBAL
 -------------------------------------------------- */
-  body {
+  body, .main-container {
     overflow-x: hidden;
   }
 
@@ -49,6 +49,8 @@
     border-top: none;
     color: #fff;
     font-size: 42px;
+    height: 60px;
+    line-height: 45px;
   }
   .menu li:first-of-type {
     margin-top: 30%;
@@ -58,7 +60,7 @@
 /* HOME
 -------------------------------------------------- */
   .home {
-    height: auto;
+    height: 150vh;
   }
   .main .big-text {
     font-size: 52px;
@@ -66,13 +68,21 @@
   }
   .home video {
     width: 250%;
-    margin-left: -70%;
+    margin-left: -75%;
+  }
+  .home .video-holder {
+    overflow-x: hidden;
+    margin-top: -100px;
+    width: 100vw;
+  }
+  .home .scroll-down {
+    display: none;
   }
   .home .text {
-    margin-top: -30px;
+    margin-top: -20px;
   }
   .main .get-uncomfortable {
-    top: 180%;
+    display: none;
   }
 
 /* CAPABILITIES
@@ -80,14 +90,17 @@
   .capabilities {
     height: 230vh;
   }
+  .capabilities header {
+    margin-bottom: 0;
+  }
   .capabilities .top-section {
     background-position-x: 50% !important;
-    height: 70vh;
+    height: 300px;
   }
   .capabilities h1 {
     font-size: 2em;
     left: 40px;
-    top: 100px;
+    top: 120px;
     width: 56%;
   }
   .capabilities .left-side, .capabilities .right-side {
@@ -103,6 +116,9 @@
   .work {
     overflow: hidden;
   }
+  .work header {
+    height: 65px;
+  }
   .work .logo {
     padding-top: 0.7em;
   }
@@ -110,8 +126,15 @@
     margin-top: 0.9em;
   }
   .work-title {
+    left: 50%;
     margin-bottom: 20px;
     margin-top: -30px;
+    position: absolute;
+    top: 105px;
+    transform: translateX(-50%);
+  }
+  .teaser {
+    margin-top: 20px;
   }
   .teaser h3 {
     font-size: 32px;
@@ -133,7 +156,7 @@
   .single-project .text {
     left: 5%;
     padding-top: 60px;
-    top: 16%;
+    top: 85px;
     width: 90%;
   }
   .single-project .text .headline {
@@ -149,7 +172,7 @@
     right: auto;
   }
   .single-project figure img {
-    height: 100vh;
+    height: 100%;
     max-width: none;
   }
   .single-project .nextprev a.prev {
@@ -179,6 +202,17 @@
     color: #fff;
   }
   footer .copyright {
+    display: none;
+  }
+}
+
+/*fixes for mobile landscape bugs*/
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .single-project figure img {
+    height: auto;
+    width: 100%;
+  }
+  footer {
     display: none;
   }
 }

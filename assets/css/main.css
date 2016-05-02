@@ -164,6 +164,9 @@ body {
 .relative {
   position: relative !important;
 }
+.fixed {
+  position: fixed !important;
+}
 
 
 .justify-around {
