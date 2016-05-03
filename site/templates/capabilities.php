@@ -2,7 +2,7 @@
 
   <main class="main" role="main">
 
-	<div class="top-section animated slideInLeft" style="background: url(<?php echo $kirby->urls()->assets() ?>/images/capabilities.jpg)">
+	<div class="top-section animated slideInLeft" style="background: url(<?php echo $kirby->urls()->assets() ?>/images/capabilities.gif)">
 		<h1><?php echo $page->bigtitle()->kirbytext() ?><span>.</span></h1>
 	</div>
 
