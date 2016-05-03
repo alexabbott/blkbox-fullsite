@@ -1,9 +1,7 @@
 <?php snippet('header') ?>
 
-<main class="contactContent">
-  <span class="absolute imgCont">
-    <img class="absolute" src="<?php echo $kirby->urls()->assets() ?>/images/contact.png" />
-  </span>
+<main class="contactContent relative"
+      style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.png)">
   <span class="background-mesh"></span>
 
   <h1 class="uppercase bold white text-center relative pageTitle"><?php echo $page->header()->html() ?></h1>
