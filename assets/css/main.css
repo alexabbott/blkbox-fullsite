@@ -939,16 +939,16 @@ body.contact footer .copyright {
 
 /* Contact
 -------------------------------------------------- */
-body.contact {
+.contact {
   background: rgba(0,0,0,1);
   overflow: hidden;
 }
-body.contact header {
+.contact header {
   position: absolute;
   width: 100%;
   z-index: 3;
 }
-body.contact footer {
+.contact footer {
   z-index: 3;
   position: absolute;
 }

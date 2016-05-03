@@ -182,10 +182,37 @@
     left: 60%;
   }
 
+/* ABOUT
+-------------------------------------------------- */
+  #aboutText p {
+    width: 90% !important;
+  }
+  #aboutText h1 {
+    font-size: 2em !important;
+  }
+  #aboutText .red {
+    font-size: 0.8em !important;
+  }
+  #aboutStaff {
+    flex-flow: column !important;
+    align-items: center;
+  }
+
 /* Contact
 -------------------------------------------------- */
-  body.contact {
-    overflow: scroll !important;
+  .contact {
+    overflow-y: scroll !important;
+  }
+  .contactContent > h1 {
+    font-size: 2em !important;
+    margin-top: 3em !important;
+  }
+  #boxCont {
+    flex-flow: column !important;
+    align-items: center;
+  }
+  #boxCont .box {
+    flex: initial !important;
   }
 
 /* Footer
