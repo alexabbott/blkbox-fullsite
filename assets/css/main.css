@@ -106,6 +106,7 @@ body {
 }
 .work {
   background: #000;
+  background-size: 100%;
   color: #fff;
   overflow: hidden;
 }
