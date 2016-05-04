@@ -239,7 +239,7 @@ nav {
 }
 
 .menu.show li:nth-child(1) {
-
+  color: blue;
 }  
 
 .menu a {
@@ -268,10 +268,6 @@ nav {
 .menu > li {
   position: relative;
   height: 200px;
-}
-
-li:first-child {
-  color: blue;
 }
 
 .menu > li > a {

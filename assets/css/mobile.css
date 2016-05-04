@@ -43,17 +43,24 @@
   .menu.show {
     height: 100vh;
     left: 0;
-    padding: 0;
+    padding-top: 15%;
   }
   .menu > li > a {
     border-top: none;
     color: #fff;
-    font-size: 42px;
-    height: 60px;
-    line-height: 45px;
+    font-size: 32px;
+    height: 40px;
+    line-height: 20px;
   }
-  .menu li:first-of-type {
+
+  /*.menu li:first-of-type {
     margin-top: 30%;
+  }*/
+
+  .menu > li {
+    margin-top: 30px;
+    width: 80%;
+    height: 100px;
   }
 
 
