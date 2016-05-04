@@ -222,11 +222,11 @@ nav {
   transition: opacity .5s ease-out;
 }
 .menu.show {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.75);
   color: #fff;
   height: 100vh;
   opacity: 1;
-  padding: 200px;
+  padding-top: 200px;
   pointer-events: initial;
   position: absolute;
   right: 0;
@@ -252,18 +252,25 @@ nav {
   color: #fff;
 }
 .menu li {
-  border-bottom: none;
-  display: block;
+  border: 6px solid white;
+  display: inline-block;
   list-style: none;
+  font-size: 10px;
+  width: 18%;
+  margin:20px;
 }
 .menu > li {
   position: relative;
+  height: 200px;
 }
 .menu > li > a {
   color: #fff;
   font-weight: 600;
-  height: 85px;
-  padding: .35em 0;
+  height: 70%;
+  padding: 2.8em 0 0;
+  font-size: 3em;
+  vertical-align: middle;
+  top: 45px;
 }
 .menu > li > a:hover {
   color: #fff !important;
