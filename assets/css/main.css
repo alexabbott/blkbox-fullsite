@@ -108,7 +108,7 @@ body {
   background: #000;
   background-size: 100%;
   color: #fff;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .white {
   color: #fff !important;
@@ -719,10 +719,26 @@ h1 a, h2 a, h3 a, h4 a {
   list-style: none;
 }
 .teaser h3 {
-  font-size: 90px;
-  font-weight: 600;
+  font-size: 14pt;
+  font-weight: 700;
   line-height: 50px;
 }
+
+.teaser h1 {
+  font-size: 48pt;
+  font-weight: 700;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1%;
+  line-height: 1em;
+}
+
+#teaserSubtitle {
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 1em;
+}
+
 .teaser li h3 a {
   display: inline-block;
   height: 72px;
@@ -1093,7 +1109,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .contact footer {
   z-index: 3;
-  position: absolute;
+  position: relative;
 }
 
 .contactContent {
@@ -1231,7 +1247,7 @@ input:-ms-input-placeholder {
   font-size: .8em;
   left: 0;
   padding: 1em 1.5em 1.5em 1.5em;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 0;
 }

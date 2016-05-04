@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main class="contactContent relative"
-      style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.gif)">
+      style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.png)">
   <span class="background-mesh"></span>
 
   <h1 class="uppercase bold white text-center relative pageTitle"><?php echo $page->header()->html() ?></h1>
@@ -25,7 +25,7 @@
     <span class="uppercase">
       <?php echo $page->cta()->kirbytext() ?>
     </span>
-    <form action="" method="post" class="email">
+    <form class="email">
       <!-- <iframe src="https://docs.google.com/forms/d/1zIKqKY8Me4_00_2abPQfjC1uvqapGdvZg6OIPKx7YyU/viewform?embedded=true" width="300" height="215" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
       <input id="email" type="text" placeholder="email address" />
       <input id="emailSubmit" type="submit" />
