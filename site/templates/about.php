@@ -2,33 +2,54 @@
 
 <main id="AboutContent" class="main text-center animated fadeInUp" role="main">
 
-  <div id="aboutText" class="text-center">
-    <h2 class="white uppercase"><?php echo $page->headline()->html() ?></h2>
-    <?php echo $page->block1()->kirbytext() ?>
-    <div id="manifesto">
-      <?php echo $page->manifesto()->kirbytext() ?>
-    </div>
-    <?php echo $page->thingWeKnow()->kirbytext() ?>
+  <div id="aboutLanding"
+       class="flex column justify-center relative"
+       style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/about.jpg)">
+    <span class="background-mesh"></span>
+    <?php echo $page->landingText()->kirbytext() ?>
   </div>
 
-  <div id="aboutStaff" class="text-center flex justify-center">
-    <?php
-      echo $page->staffHeader()->kirbytext();
+  <div id="aboutBlkbox" class="text-center">
+    <h3 class="uppercase"><?php echo $page->headline()->kirbytext() ?></h3>
+    <div class="intro uppercase">
+      <?php echo $page->intro()->kirbytext() ?>
+    </div>
+      <?php echo $page->body()->kirbytext() ?>
+  </div>
 
-      $staff = array("First Guy"=>"35", "First Woman"=>"38", "Fourth Man"=>"14", "Next Woman"=>"??");
-
-      foreach($staff as $member => $member_age) {
-        echo '<span class="staffMember flex column">
-                <span class="imgCont relative flexGrow1">
-                  <img class="absolute" src="http://i.imgur.com/9oaBK0b.png"/>
-                </span>
-                <span class="staffId">
-                  <h2>' . $member . '</h2>
-                  <h3>' . $member_age . '</h3>
-                </span>
-              </span>';
-      }
-    ?>
+  <div id="aboutStaff" class="text-center relative">
+    <span class="background-mesh"></span>
+    <? echo $page->staffHeader()->kirbytext(); ?>
+    <span class="flex justify-center">
+      <span class="staffMember flex column">
+        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="staffId">
+          <h3 class="uppercase white"><?php echo $page->staff1()->html() ?></h3>
+          <h4 class="uppercase white"><?php echo $page->staff1Title()->html() ?></h4>
+        </span>
+      </span>
+      <span class="staffMember flex column">
+        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="staffId">
+          <h3 class="uppercase white"><?php echo $page->staff2()->html() ?></h3>
+          <h4 class="uppercase white"><?php echo $page->staff2Title()->html() ?></h4>
+        </span>
+      </span>
+      <span class="staffMember flex column">
+        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="staffId">
+          <h3 class="uppercase white"><?php echo $page->staff3()->html() ?></h3>
+          <h4 class="uppercase white"><?php echo $page->staff3Title()->html() ?></h4>
+        </span>
+      </span>
+      <span class="staffMember flex column">
+        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="staffId">
+          <h3 class="uppercase white"><?php echo $page->staff4()->html() ?></h3>
+          <h4 class="uppercase white"><?php echo $page->staff4Title()->html() ?></h4>
+        </span>
+      </span>
+    </span>
   </div>
 
   <div id="aboutGram" class="text-center">
@@ -46,7 +67,7 @@
   //Instagram
   $.ajax({
     method: "GET",
-    url: "https://api.instagram.com/v1/users/1578228172/media/recent?access_token=1578228172.467ede5.04a6ec58145743cc851a2d64b58d9627&count=4",
+    url: "https://api.instagram.com/v1/users/1903309025/media/recent?access_token=1578228172.467ede5.04a6ec58145743cc851a2d64b58d9627&count=6",
     dataType: "jsonp",
     jsonpCallback: "jsoncallback",
     success: function(data) {
