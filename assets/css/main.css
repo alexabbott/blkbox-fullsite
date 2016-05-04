@@ -216,6 +216,7 @@ nav {
   text-transform: uppercase;
   width: 0;
 }
+
 .menu {
   opacity: 0;
   pointer-events: none;
@@ -263,14 +264,23 @@ nav {
   position: relative;
   height: 200px;
 }
+
+li:first-child {
+  color: blue;
+}
+
 .menu > li > a {
   color: #fff;
   font-weight: 600;
-  height: 70%;
-  padding: 2.8em 0 0;
-  font-size: 3em;
+  height: 80%;
+  padding: 1.1em 10px 0;
+  font-size: 4.5em;
   vertical-align: middle;
   top: 45px;
+  word-break: break-all;
+  line-height: 1;
+  width: 77%;
+}
 }
 .menu > li > a:hover {
   color: #fff !important;
