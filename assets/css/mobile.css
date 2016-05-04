@@ -176,10 +176,10 @@
     max-width: none;
   }
   .single-project .nextprev a.prev {
-    left: 40%;
+    left: 8%;
   }
   .single-project .nextprev a.next {
-    left: 60%;
+    /*left: 60%;*/
   }
 
 /* ABOUT
