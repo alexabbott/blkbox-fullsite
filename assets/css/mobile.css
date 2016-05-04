@@ -63,6 +63,7 @@
 /* HOME
 -------------------------------------------------- */
   .home {
+    background: #000;
     height: 150vh;
   }
   .main .big-text {
@@ -70,12 +71,16 @@
     margin-left: 20px;
   }
   .home video {
+    pointer-events: auto;
     width: 250%;
     margin-left: -75%;
   }
+  .home .video-overlay {
+    display: none;
+  }
   .home .video-holder {
     overflow-x: hidden;
-    margin-top: -100px;
+    margin-top: 75px;
     width: 100vw;
   }
   .home .scroll-down {
@@ -91,7 +96,7 @@
 /* CAPABILITIES
 -------------------------------------------------- */
   .capabilities {
-    height: 160vh;
+    height: 240vh;
   }
   .capabilities header {
     margin-bottom: 0;
@@ -120,6 +125,9 @@
   .work {
     overflow: hidden;
   }
+  .work .main {
+    height: 100vh;
+  }
   .work header {
     height: 65px;
   }
@@ -127,13 +135,15 @@
     padding-top: 0.7em;
   }
   .work #nav-icon {
+    left: 69vw;
     margin-top: 0.9em;
+    right: auto;
   }
   .work-title {
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .teaser {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .teaser h3 {
     font-size: 32px;
@@ -149,6 +159,9 @@
   .client-title {
     font-size: 20px;
     margin-top: 30px;
+  }
+  .client-list {
+    bottom: 45px;
   }
   .client-list img {
     width: 75px;
@@ -210,11 +223,11 @@
     position: fixed;
   }
   .contact {
-    height: 150vh;
+    height: 230vh;
     overflow-y: scroll !important;
   }
   .contactContent {
-    min-height: 150vh;
+    min-height: 230vh;
   }
   .contactContent > h1 {
     font-size: 2em !important;

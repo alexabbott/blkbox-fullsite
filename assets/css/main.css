@@ -724,7 +724,6 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .single-project .text .project-desc {
   position: relative;
-  text-align: left;
 }
 .single-project .nextprev a {
   bottom: 30px;
