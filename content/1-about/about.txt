@@ -19,7 +19,7 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
 
 ----
 
-Headline: Our Story
+Headline: Our Beliefs
 
 ----
 
@@ -54,35 +54,35 @@ Thingweknow:
 
 ----
 
-Staff1: 
+Staff1: Keenan Beasley
 
 ----
 
-Staff1title: 
+Staff1title: Co-Founder
 
 ----
 
-Staff2: 
+Staff2: Dioanna McPhatter
 
 ----
 
-Staff2title: 
+Staff2title: Co-Founder
 
 ----
 
-Staff3: 
+Staff3: Soomean Chang
 
 ----
 
-Staff3title: 
+Staff3title: Creative
 
 ----
 
-Staff4: 
+Staff4: Jermaine Clark
 
 ----
 
-Staff4title: 
+Staff4title: Government
 
 ----
 
@@ -91,3 +91,20 @@ Gramtag: catch us up on the gram
 ----
 
 Staffheader: Our Leadership
+
+----
+
+Landingtext: 
+
+#LOVE ME
+#OR HATE ME
+#AS LONG AS YOU
+#UNDERSTAND ME<span class="red">.</span>
+
+----
+
+Intro: ## BLKBOX is your access to our mystifying, complicated open- minded and world-changing generation-millenials.
+
+----
+
+Body: We're young, but we're experienced. Not know-it-alls. In fact we don't know all of the answers, but we're gonna have a hell of a time finding them. We're unapologetic, not arrogant. We're creators, not fluffers. We're passionate AF. And we know one thing is true. You have to GET UNCOMFORTABLE to grow.

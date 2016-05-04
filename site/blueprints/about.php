@@ -8,17 +8,17 @@ fields:
   title:
     label: Title
     type:  text
+  landingText:
+    label: Landing Text
+    type: textarea
   headline:
-    label: Headline
+    label: About Headline
     type:  text
-  block1:
-    label: Block 1 Text
+  intro:
+    label: About Intro (Bold)
     type:  textarea
-  manifesto:
-    label: Manifesto
-    type:  textarea
-  thingWeKnow:
-    label: The Thing We Know
+  body:
+    label: About Body
     type:  textarea
   staffHeader:
     label: Staff Block Header
