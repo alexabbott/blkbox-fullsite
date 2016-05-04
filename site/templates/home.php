@@ -3,22 +3,13 @@
   <main class="main" role="main">
 
     <div class="video-holder">
+      <div class="video-overlay"></div>
+      <img data-src="<?php echo $kirby->urls()->assets() ?>/images/get-animation.gif" alt="blkbox" class="get-animation">
       <video autoplay>
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.mp4" type="video/mp4">
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.webm" type="video/webm">
       </video>
-      <h3 class="animated fadeInUp scroll-down">scroll down</h3>
-    </div>
-
-    <div class="text">
-      <div class="big-text animated fadeInUp"><?php echo $page->main()->kirbytext() ?></div>
-
-      <div class="hold-down animated fadeInUp">
-	      <?php echo $page->sub()->kirbytext() ?>
-	      <div class="hold-down-text animated fadeIn"><?php echo $page->small()->kirbytext() ?></div>
-	      <div class="square"></div>
-        <div class="get-uncomfortable">get uncomfortable.</div>
-  	  </div>
+      <h3 class="animated fadeInUp scroll-down">PRESS & HOLD TO PLAY</h3>
     </div>
 
   </main>
