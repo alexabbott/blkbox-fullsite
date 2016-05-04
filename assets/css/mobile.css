@@ -11,7 +11,10 @@
 /* Header
 -------------------------------------------------- */
   .header {
-    background: #000;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
   }
   .logo {
     color: #fff;
@@ -88,7 +91,7 @@
 /* CAPABILITIES
 -------------------------------------------------- */
   .capabilities {
-    height: 230vh;
+    height: 160vh;
   }
   .capabilities header {
     margin-bottom: 0;
@@ -96,6 +99,7 @@
   .capabilities .top-section {
     background-position-x: 50% !important;
     height: 300px;
+    margin-top: 75px;
   }
   .capabilities h1 {
     font-size: 2em;
@@ -126,15 +130,10 @@
     margin-top: 0.9em;
   }
   .work-title {
-    left: 50%;
-    margin-bottom: 20px;
-    margin-top: -30px;
-    position: absolute;
-    top: 105px;
-    transform: translateX(-50%);
+    margin-top: 100px;
   }
   .teaser {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .teaser h3 {
     font-size: 32px;
@@ -144,6 +143,7 @@
     height: 35px;
   }
   .project-image-holder {
+    top: 38%;
     width: 270vw;
   }
   .client-title {
@@ -184,6 +184,9 @@
 
 /* ABOUT
 -------------------------------------------------- */
+  #aboutText {
+    margin-top: 100px;
+  }
   #aboutText p {
     width: 90% !important;
   }
@@ -197,11 +200,21 @@
     flex-flow: column !important;
     align-items: center;
   }
+  #AboutContent #letsTalk {
+    margin-bottom: 30px;
+  }
 
 /* Contact
 -------------------------------------------------- */
+  .contact header {
+    position: fixed;
+  }
   .contact {
+    height: 150vh;
     overflow-y: scroll !important;
+  }
+  .contactContent {
+    min-height: 150vh;
   }
   .contactContent > h1 {
     font-size: 2em !important;

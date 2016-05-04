@@ -195,7 +195,9 @@ body {
   font-weight: 600;
   margin-bottom: 0em;
   padding: 1.5em;
+  position: absolute;
   transition: color 0.5s ease-out;
+  z-index: 1;
 }
 .work .logo, .capabilities .logo {
   color: #fff;
@@ -306,7 +308,8 @@ nav {
   float: right;
   height: 45px;
   margin: 1.5em 1.5em 0 30px;
-  position: relative;
+  position: absolute;
+  right: 0;
   width: 40px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -435,7 +438,8 @@ h1 a, h2 a, h3 a, h4 a {
   margin-top: 150px;
 }
 .home .main {
-  margin-bottom: 150px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .main {
@@ -463,23 +467,47 @@ h1 a, h2 a, h3 a, h4 a {
   width: 100vw;
 }
 
+.home .video-overlay {
+  cursor: pointer;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  z-index: 3;
+}
+
 .home video {
   display: block;
-  height: 107%;
+  height: auto;
+  pointer-events: none;
   position: absolute;
   top: -20px;
-  width: 100%;
+  width: 105%;
 }
 
 .home .video-holder h3 {
+  background: #fff;
   bottom: 30px;
-  color: #fff;
+  color: #000;
+  cursor: pointer;
   font-size: 0.8em;
   font-weight: 600;
-  left: 50%;
+  left: 43%;
+  padding: 5px 10px;
   position: absolute;
   text-align: center;
   transform: translateX(-50%);
+}
+
+.home .get-animation {
+  display: none;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.5s ease-out;
+  width: 100vw;
+  z-index: 2;
 }
 
 .main .big-text {
@@ -563,7 +591,7 @@ h1 a, h2 a, h3 a, h4 a {
   position: absolute;
   top: 46%;
   transform: translate(-50%, -50%);
-  width: 75vw;
+  width: 105vw;
   z-index: -1;
 }
 .project-image-holder img {
@@ -666,12 +694,17 @@ h1 a, h2 a, h3 a, h4 a {
   background: #fff;
   color: #000;
   height: auto;
+  min-height: 100vh;
   padding: 40px;
   position: absolute;
   text-align: center;
   top: 0;
   width: 50%;
   z-index: 1;
+}
+.single-project em {
+  font-style: normal;
+  text-decoration: underline;
 }
 .single-project .text h3 {
   font-weight: 800;
@@ -831,6 +864,9 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* About
 -------------------------------------------------- */
+body.about {
+  height: auto;
+}
 body.about,
 body.contact {
   background: rgba(0,0,0,1);
@@ -1056,7 +1092,7 @@ body.contact footer .copyright {
   padding: 1em 1.5em 1.5em 1.5em;
   position: absolute;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 .footer-logo {
   font-weight: 600;
@@ -1065,14 +1101,21 @@ body.contact footer .copyright {
   color: #fff;
 }
 .copyright {
+  bottom: 10px;
   float: left;
+  position: absolute;
+  z-index: 1;
 }
 .colophon {
   float: right;
 }
 .colophon .right {
+  bottom: 10px;
   display: inline-block;
   float: right;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
 }
 .colophon .right a {
   margin-left: 20px;
