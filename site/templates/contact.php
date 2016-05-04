@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main class="contactContent relative"
-      style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.png)">
+      style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.gif)">
   <span class="background-mesh"></span>
 
   <h1 class="uppercase bold white text-center relative pageTitle"><?php echo $page->header()->html() ?></h1>

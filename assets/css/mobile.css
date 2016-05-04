@@ -66,21 +66,26 @@
     background: #000;
     height: 150vh;
   }
+  .home .main-container {
+    overflow: hidden;
+    position: fixed;
+  }
   .main .big-text {
     font-size: 52px;
     margin-left: 20px;
   }
   .home video {
     pointer-events: auto;
-    width: 250%;
-    margin-left: -75%;
+    width: 330%;
+    margin-left: -113%;
   }
   .home .video-overlay {
     display: none;
   }
   .home .video-holder {
-    overflow-x: hidden;
-    margin-top: 75px;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0px;
     width: 100vw;
   }
   .home .scroll-down {
