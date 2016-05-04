@@ -25,7 +25,8 @@
     <span class="uppercase">
       <?php echo $page->cta()->kirbytext() ?>
     </span>
-    <form class="email">
+    <form action="" method="post" class="email">
+      <!-- <iframe src="https://docs.google.com/forms/d/1zIKqKY8Me4_00_2abPQfjC1uvqapGdvZg6OIPKx7YyU/viewform?embedded=true" width="300" height="215" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
       <input id="email" type="text" placeholder="email address" />
       <input id="emailSubmit" type="submit" />
     </form>
