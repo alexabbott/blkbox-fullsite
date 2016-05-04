@@ -10,7 +10,7 @@
   </div>
 
   <div id="aboutBlkbox" class="text-center">
-    <h3 class="uppercase"><?php echo $page->headline()->html() ?></h3>
+    <h3 class="uppercase"><?php echo $page->headline()->kirbytext() ?></h3>
     <div class="intro uppercase">
       <?php echo $page->intro()->kirbytext() ?>
     </div>

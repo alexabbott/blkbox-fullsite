@@ -19,7 +19,7 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
 
 ----
 
-Headline: Our Beliefs
+Headline: <em>B</em>LKBOX
 
 ----
 
@@ -103,7 +103,7 @@ Landingtext:
 
 ----
 
-Intro: ## BLKBOX is your access to our mystifying, complicated open- minded and world-changing generation-millenials.
+Intro: ##is your access to our mystifying, complicated open- minded and world-changing generation-<span class="underline">millenials</span>.
 
 ----
 
