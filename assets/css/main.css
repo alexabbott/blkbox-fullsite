@@ -691,32 +691,40 @@ h1 a, h2 a, h3 a, h4 a {
   z-index: 1;
 }
 .single-project .text h3 {
-  font-weight: 800;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22pt;
+  color: #ef4849;
 }
 .single-project .text .headline {
-  font-size: 80px;
+  font-size: 25pt;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 1.2em;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 .single-project .text .subtitle {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 60px;
+  font-size: 22pt;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: black;
 }
+
+.project-desc p {
+  font-size: 18pt;
+  font-weight: 300;
+  text-align: center;
+}
+
 .single-project .text .project-desc {
   position: relative;
   text-align: left;
 }
 .single-project .nextprev a {
-  bottom: 30px;
-  border: 3px solid #000;
+  bottom: 30px; */
   cursor: pointer;
   font-size: 2em;
+  color: #a0a1a4;
   height: 50px;
-  padding-top: 9px;
   position: absolute;
   transform: translateX(-50%);
   transition: 0.5s ease-out;
@@ -730,7 +738,10 @@ h1 a, h2 a, h3 a, h4 a {
   left: 45%;
 }
 .single-project .nextprev a.next {
-  left: 55%;
+  /*left: 55%;*/
+  position: fixed;
+  top: 50%;
+  right: -5%;
 }
 .single-project .text .project-close {
   cursor: pointer;
@@ -740,7 +751,7 @@ h1 a, h2 a, h3 a, h4 a {
   top: 20px;
 }
 .single-project .text .project-close a {
-  color: #000;
+  color: #a0a1a4;
 }
 .single-project figure {
   height: 100vh;
