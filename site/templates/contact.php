@@ -25,9 +25,9 @@
     <span class="uppercase">
       <?php echo $page->cta()->kirbytext() ?>
     </span>
-    <form>
-      <input type="text" placeholder="email" />
-      <input type="submit"
+    <form class="email">
+      <input id="email" type="text" placeholder="email address" />
+      <input id="emailSubmit" type="submit" />
     </form>
   </div>
 </main>

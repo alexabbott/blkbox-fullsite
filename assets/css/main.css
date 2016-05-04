@@ -237,6 +237,11 @@ nav {
   width: 100%;
   z-index: 3;
 }
+
+.menu.show li:nth-child(1) {
+
+}  
+
 .menu a {
   box-sizing: border-box;
   color: #fff;
@@ -1066,8 +1071,48 @@ body.contact footer .copyright {
 }
 
 #contactCTA {
-  margin-top: 3em;
+  margin-top: 1em;
+  line-height: 1.2em;
 }
+
+#contactCTA p {
+  color: white;
+  padding-bottom: 10px;
+}
+
+#contactCTA input {
+  height: 30px;
+}
+
+#email {
+  width: 20%;
+}
+
+#emailSubmit {
+  width: 5%;
+  background: white;
+}
+
+input::-webkit-input-placeholder {
+    color: #a0a1a4;
+    padding-left: 25px;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+    color: #a0a1a4;
+    padding-left: 25px;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #a0a1a4;  
+    padding-left: 25px;
+}
+ 
+input:-ms-input-placeholder {  
+    color: #a0a1a4;
+    padding-left: 25px;  
+}
+
 /* Next/Prev nav
 -------------------------------------------------- */
 .nextprev {
