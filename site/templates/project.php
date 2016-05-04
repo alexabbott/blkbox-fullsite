@@ -12,7 +12,7 @@
       <h3 class="subtitle"><?php echo $page->subtitle()->html() ?></h3>
       <nav class="nextprev cf" role="navigation">
         <?php if($prev = $page->prevVisible()): ?>
-        <a class="prev" href="<?php echo $prev->url() ?>">&larr;</a>
+        <a class="prev fa fa-angle-left" href="<?php echo $prev->url() ?>" aria-hidden="true"></a>
         <?php endif ?>
         <?php if($next = $page->nextVisible()): ?>
         <a class="next fa fa-angle-right" href="<?php echo $next->url() ?>" aria-hidden="true"></a>
