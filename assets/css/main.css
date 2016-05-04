@@ -344,6 +344,7 @@ li:first-child {
   position: absolute;
   height: 5px;
   width: 100%;
+  border-radius: 2px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -361,16 +362,20 @@ li:first-child {
 /* Nav Icon */
 
 #nav-icon span:nth-child(1) {
-  top: 0px;
+  top: 9px;
 }
 
-#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+#nav-icon span:nth-child(2) {
   top: 18px;
 }
 
-#nav-icon span:nth-child(4) {
-  top: 36px;
+#nav-icon span:nth-child(3) {
+  top: 27px;
 }
+
+/*#nav-icon span:nth-child(4) {
+  top: 36px;
+}*/
 
 #nav-icon.open span {
   background: #fff;
@@ -394,6 +399,7 @@ li:first-child {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  top: 18px;
 }
 
 #nav-icon.open span:nth-child(4) {
