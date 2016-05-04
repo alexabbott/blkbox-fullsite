@@ -913,7 +913,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 #aboutLanding {
   width: 100%;
-  height: 66vh;
+  height: 75vh;
   background-repeat: none;
   background-size: cover;
   background-position: center center;
@@ -1007,6 +1007,9 @@ h1 a, h2 a, h3 a, h4 a {
 }
 #photoStream .imgCont {
   width: 18%;
+}
+#photoStream .imgCont:nth-child(6) {
+  display: none;
 }
 #photoStream .imgCont img {
   width: 100%;

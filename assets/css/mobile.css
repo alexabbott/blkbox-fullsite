@@ -197,16 +197,21 @@
 
 /* ABOUT
 -------------------------------------------------- */
-  #aboutText {
-    margin-top: 100px;
-  }
-  #aboutText p {
-    width: 90% !important;
-  }
-  #aboutText h1 {
+  #aboutLanding h1 {
     font-size: 2em !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    text-align: left;
   }
-  #aboutText .red {
+  #aboutBlkbox p {
+    width: 90% !important;
+    font-size: 0.8em;
+  }
+  #aboutBlkbox h2 {
+    width: 90% !important;
+    font-size: 1.2em !important;
+  }
+  #aboutBlkbox h3 {
     font-size: 0.8em !important;
   }
   #aboutStaff {
@@ -215,6 +220,20 @@
   }
   #AboutContent #letsTalk {
     margin-bottom: 30px;
+  }
+  #photoStream {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    transform: none;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  #photoStream .imgCont {
+    width: 40%;
+    margin: 2%;
+  }
+  #photoStream .imgCont:nth-child(6) {
+    display: inline;
   }
 
 /* Contact
