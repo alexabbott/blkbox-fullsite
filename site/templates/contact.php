@@ -25,11 +25,7 @@
     <span class="uppercase">
       <?php echo $page->cta()->kirbytext() ?>
     </span>
-    <form class="email">
-      <input id="email" type="text" placeholder="email address" />
-      <input id="emailSubmit" type="submit" />
-    </form>
-    <?php commentForm(); ?>
+    <script type="text/javascript" src="https://form.jotform.com/jsform/61248445993163"></script>
   </div>
 </main>
 
