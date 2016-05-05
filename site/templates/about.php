@@ -22,28 +22,28 @@
     <? echo $page->staffHeader()->kirbytext(); ?>
     <span class="flex justify-center">
       <span class="staffMember flex column">
-        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="imgCont" style="background-image: url('<?php echo $kirby->urls()->assets() ?>/images/keenan.jpg')"></span>
         <span class="staffId">
           <h3 class="uppercase white"><?php echo $page->staff1()->html() ?></h3>
           <h4 class="uppercase white"><?php echo $page->staff1Title()->html() ?></h4>
         </span>
       </span>
       <span class="staffMember flex column">
-        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="imgCont" style="background-image: url('<?php echo $kirby->urls()->assets() ?>/images/dionna.jpg')"></span>
         <span class="staffId">
           <h3 class="uppercase white"><?php echo $page->staff2()->html() ?></h3>
           <h4 class="uppercase white"><?php echo $page->staff2Title()->html() ?></h4>
         </span>
       </span>
       <span class="staffMember flex column">
-        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="imgCont" style="background-image: url('<?php echo $kirby->urls()->assets() ?>/images/soomean.jpg')"></span>
         <span class="staffId">
           <h3 class="uppercase white"><?php echo $page->staff3()->html() ?></h3>
           <h4 class="uppercase white"><?php echo $page->staff3Title()->html() ?></h4>
         </span>
       </span>
       <span class="staffMember flex column">
-        <span class="imgCont" style="background-image: url('')"></span>
+        <span class="imgCont" style="background-image: url('<?php echo $kirby->urls()->assets() ?>/images/jermaine.jpg')"></span>
         <span class="staffId">
           <h3 class="uppercase white"><?php echo $page->staff4()->html() ?></h3>
           <h4 class="uppercase white"><?php echo $page->staff4Title()->html() ?></h4>

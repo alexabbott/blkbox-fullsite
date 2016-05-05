@@ -25,7 +25,7 @@
     <span class="uppercase">
       <?php echo $page->cta()->kirbytext() ?>
     </span>
-    <script type="text/javascript" src="https://form.jotform.com/jsform/61248445993163"></script>
+    <script type="text/javascript" src="https://form.jotform.com/jsform/61248537261153"></script>
   </div>
 </main>
 
