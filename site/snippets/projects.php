@@ -16,33 +16,29 @@
   
   <div id="clientList">
 
-    <!-- <div class="row clients-header"> -->
       <h3 id="clientList">Clients</h3>
-    <!-- </div> -->
+
+      <br>
+    
+      <div class="row">   
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/baxalta_white.jpg" alt="Baxalta">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/western_white.jpg" alt="Western Union">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/piercing_white.jpg" alt="Piercing Pagoda">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/havas_white.jpg" alt="Havas">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/frenchs_white.jpg" alt="French'">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/facebook_white.jpg" alt="Facebook">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/bonotel_white.jpg" alt="Bonotel">
+      </div>
+      <div class="row">   
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/tacobell_white.jpg" alt="Taco Bell">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/melange_white.jpg" alt="Melange Expressions">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/hiring_white.jpg" alt="Hiring our Heroes">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/garden_white.jpg" alt="Garden Lites">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/franks_white.jpg" alt="Franks">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/brock_white.jpg" alt="Brock">
+        <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/beachbody_white.jpg" alt="Beachbody">
+      </div>
 
   </div>
 
 </ul>
-
-<!-- <div class="client-list">
-  <div class="row">   
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/baxalta.jpg" alt="Baxalta">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/beachbody.jpg" alt="Beachbody">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/bonotel.jpg" alt="Bonotel">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/brock.jpg" alt="Brock">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/facebook.jpg" alt="Facebook">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/franks.jpg" alt="Franks">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/frenchs.jpg" alt="French'">
-  </div>
-  <div class="row">   
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/garden.jpg" alt="Garden Lites">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/havas.jpg" alt="Havas">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/hiring.jpg" alt="Hiring our Heroes">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/melange.jpg" alt="Melange Expressions">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/piercing.jpg" alt="Piercing Pagoda">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/tacobell.jpg" alt="Taco Bell">
-    <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/western.jpg" alt="Western Union">
-  </div>
-</div> -->
-
-

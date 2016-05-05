@@ -6,7 +6,7 @@
 
 	<?php snippet('projects') ?>
 
-	<h4 class="client-title">
+	<!-- <h4 class="client-title">
 		view full client list
 		<div></div>
 	</h4>
@@ -35,7 +35,7 @@
 			<img src="<?php echo $kirby->urls()->assets() ?>/images/logos/western.jpg" alt="Western Union">
 		</div>
 	</div>
-
+ -->
   </main>
 
 <?php snippet('footer') ?>
