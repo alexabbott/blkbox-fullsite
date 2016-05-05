@@ -719,8 +719,8 @@ h1 a, h2 a, h3 a, h4 a {
 .teaser li {
   list-style: none;
   /*background-image: url("<?php echo $image;?>");*/
-  height: 418px;
-  padding-top:60px;
+  height: 419px;
+  padding-top:70px;
 }
 
 .teaser li:hover {
@@ -778,6 +778,20 @@ h1 a, h2 a, h3 a, h4 a {
   margin-top: -20px;
 }
 
+#clientList {
+  font-size: 25pt;
+  font-weight: 700;
+  line-height: 50pt;
+  display: inline-block;
+  text-transform: none;
+  color: #ef4849;
+  padding-bottom: -15px;
+  border-bottom: 3px solid #ef4849;
+}
+
+.teaser li:hover > #clientList {
+  background: transparent;
+}
 
 /* Single Project
 -------------------------------------------------- */
