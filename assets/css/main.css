@@ -1078,6 +1078,8 @@ h1 a, h2 a, h3 a, h4 a {
   transform: translateX(-10%);
 }
 #photoStream .imgCont {
+  border: 5px solid #fff;
+  box-sizing: border-box;
   width: 18%;
 }
 #photoStream .imgCont:nth-child(6) {

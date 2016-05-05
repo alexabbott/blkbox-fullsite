@@ -29,6 +29,7 @@
       <input id="email" type="text" placeholder="email address" />
       <input id="emailSubmit" type="submit" />
     </form>
+    <?php commentForm(); ?>
   </div>
 </main>
 

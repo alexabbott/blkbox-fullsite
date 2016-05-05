@@ -67,7 +67,7 @@
   //Instagram
   $.ajax({
     method: "GET",
-    url: "https://api.instagram.com/v1/users/1903309025/media/recent?access_token=1578228172.467ede5.04a6ec58145743cc851a2d64b58d9627&count=6",
+    url: "https://api.instagram.com/v1/users/1430749939/media/recent?access_token=1578228172.467ede5.04a6ec58145743cc851a2d64b58d9627&count=6",
     dataType: "jsonp",
     jsonpCallback: "jsoncallback",
     success: function(data) {

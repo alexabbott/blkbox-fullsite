@@ -1,0 +1,3 @@
+[submodule "site/plugins/comments"]
+	path = site/plugins/comments
+	url = https://github.com/dweidner/kirby-comments.git
