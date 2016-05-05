@@ -720,7 +720,11 @@ h1 a, h2 a, h3 a, h4 a {
   list-style: none;
   /*background-image: url("<?php echo $image;?>");*/
   height: 418px;
-  padding-top:50px;
+  padding-top:60px;
+}
+
+.teaser li:hover {
+  background: rgba(0,0,0,.7);
 }
 
 .teaser li:hover > #workHeader {
@@ -752,7 +756,7 @@ h1 a, h2 a, h3 a, h4 a {
 
 
 .teaser h1 {
-  font-size: 41.67pt;
+  font-size: 31.67pt;
   font-weight: 700;
   color: transparent;
   margin-bottom: 1%;
@@ -771,6 +775,7 @@ h1 a, h2 a, h3 a, h4 a {
   font-weight: 400;
   line-height: 50pt;
   text-transform: none;
+  margin-top: -20px;
 }
 
 
