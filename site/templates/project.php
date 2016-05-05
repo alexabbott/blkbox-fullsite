@@ -32,5 +32,4 @@
 
 
   </main>
-
 <?php snippet('footer') ?>

@@ -1,24 +1,24 @@
 <?php snippet('header') ?>
 
 <main class="contactContent relative"
-      style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.gif)">
-  <span class="background-mesh"></span>
+      style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.png)">
+  <span class="background-mesh" style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/black-mesh.png)"></span>
 
   <h1 class="uppercase bold white text-center relative pageTitle"><?php echo $page->header()->html() ?></h1>
 
   <div id="boxCont" class="flex justify-center relative">
-    <span class="box pointer flex column justify-center">
+    <a href="mailto:careers@weareblkbox.com?subject=Get Hired" class="box pointer flex column justify-center">
       <span><?php echo $page->box1()->kirbytext() ?></span>
       <?php echo $page->box1Sub()->kirbytext() ?>
-    </span>
-    <span class="box pointer flex column justify-center">
+    </a>
+    <a href="mailto:info@weareblkbox.com?subject=Hire Us" class="box pointer flex column justify-center">
       <span><?php echo $page->box2()->kirbytext() ?></span>
       <?php echo $page->box2Sub()->kirbytext() ?>
-    </span>
-    <span class="box pointer flex column justify-center">
+    </a>
+    <a  href="mailto:info@weareblkbox.com?subject=General Inquiry" class="box pointer flex column justify-center">
       <span><?php echo $page->box3()->kirbytext() ?></span>
       <?php echo $page->box3Sub()->kirbytext() ?>
-    </span>
+    </a>
   </div>
 
   <div id="contactCTA" class="relative text-center white">

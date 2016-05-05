@@ -17,8 +17,8 @@
       <?php echo $page->body()->kirbytext() ?>
   </div>
 
-  <div id="aboutStaff" class="text-center relative">
-    <span class="background-mesh"></span>
+  <div id="aboutStaff" class="text-center relative" style="background-image: url('<?php echo $kirby->urls()->assets() ?>/images/white-mesh.png')">
+    <span></span>
     <? echo $page->staffHeader()->kirbytext(); ?>
     <span class="flex justify-center">
       <span class="staffMember flex column">
@@ -57,7 +57,7 @@
     <div id="photoStream" class="flex justify-between"></div>
   </div>
 
-  <div id="letsTalk" class="inline-block bold"><a href="./contact">Let's Talk.</a></div>
+  <div id="letsTalk" class="inline-block bold"><a href="mailto:info@weareblkbox.com?subject=Lets Talk">Let's Talk.</a></div>
 
 </main>
 

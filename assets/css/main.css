@@ -206,6 +206,7 @@ body {
 .logo {
   display: block;
   float: left;
+  font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 0em;
   padding: 1.5em;
@@ -243,7 +244,7 @@ nav {
   color: #fff;
   height: 100vh;
   opacity: 1;
-  padding-top: 200px;
+  padding-top: 35vh;
   pointer-events: initial;
   position: absolute;
   right: 0;
@@ -264,12 +265,6 @@ nav {
   display: inline-block;
   font-size: 4em;
 }
-.menu a:hover {
-  box-sizing: border-box;
-  color: #fff;
-  border-bottom: 4px solid #ff0000;
-  text-decoration: none;
-}
 .menu .active {
   color: #fff;
 }
@@ -277,26 +272,37 @@ nav {
   border: 6px solid white;
   display: inline-block;
   list-style: none;
-  font-size: 10px;
-  width: 18%;
-  margin:20px;
+  margin: 0 20px;
+  transition: border .5s ease-out, color .2s ease-out;
+  vertical-align: middle;
 }
 .menu > li {
+  height: 15vw;
   position: relative;
-  height: 200px;
+  width: 15vw;
 }
 
+.menu li:hover {
+  border: 6px solid #ff0000;
+  color: #ff0000;
+  text-decoration: none;
+}
 .menu > li > a {
   color: #fff;
+  font-size: 3.8vw;
   font-weight: 600;
-  height: 80%;
-  padding: 1.1em 10px 0;
-  font-size: 4.5em;
-  vertical-align: middle;
-  top: 45px;
+  height: 100%;
+  line-height: 4vw;
+  padding-top: 5vw;
+  text-transform: none;
+  width: 82%;
   word-break: break-all;
-  line-height: 1;
-  width: 77%;
+}
+.menu li:nth-of-type(4) a {
+  width:50%;
+}
+.menu li:nth-of-type(3) a, .menu li:nth-of-type(4) a {
+  padding-top: 3.2vw;
 }
 }
 .menu > li > a:hover {
@@ -342,7 +348,7 @@ nav {
   margin: 1.5em 1.5em 0 30px;
   position: absolute;
   right: 0;
-  width: 40px;
+  width: 30px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -360,7 +366,7 @@ nav {
   left: 0;
   opacity: 1;
   position: absolute;
-  height: 5px;
+  height: 3px;
   width: 100%;
   border-radius: 2px;
   -webkit-transform: rotate(0deg);
@@ -470,6 +476,9 @@ h1 a, h2 a, h3 a, h4 a {
   color: #fff;
   position: absolute;
   z-index: 5;
+}
+.home #nav-icon {
+  z-index: 6;
 }
 .home #nav-icon span {
   background: #fff;
@@ -744,47 +753,58 @@ h1 a, h2 a, h3 a, h4 a {
   z-index: 1;
 }
 .single-project em {
+  font-size: 60px;
   font-style: normal;
+  line-height: 66px;
   text-decoration: underline;
 }
 .single-project .text h3 {
   font-weight: 700;
-  font-size: 22pt;
+  font-size: 22px;
+  letter-spacing: 3px;
   color: #ef4849;
 }
 .single-project .text .headline {
-  font-size: 25pt;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 .single-project .text .subtitle {
-  font-size: 22pt;
+  font-size: 22px;
   font-weight: 400;
+  letter-spacing: 1px;
   margin-bottom: 30px;
   color: black;
 }
 
 .project-desc p {
-  font-size: 18pt;
+  font-size: 18px;
   font-weight: 300;
   text-align: center;
 }
-
+.project-desc h1 {
+  margin-bottom: 0;
+}
+.project-desc h1 strong {
+  font-size: 60px;
+  line-height: 66px;
+}
 .single-project .text .project-desc {
   position: relative;
 }
 .single-project .nextprev a {
   /*bottom: 30px;*/
   cursor: pointer;
-  font-size: 2em;
+  font-size: 3em;
   color: #a0a1a4;
   height: 50px;
   position: absolute;
   transform: translateX(-50%);
   transition: 0.5s ease-out;
   width: 50px;
+  z-index: 6;
 }
 .single-project .nextprev a:hover {
   /*background: #000;*/
@@ -793,14 +813,14 @@ h1 a, h2 a, h3 a, h4 a {
 .single-project .nextprev a.prev {
   /*left: 45%;*/
   position: fixed;
-  top: 50%;
-  left: 2%;
+  top: 36%;
+  left: 5%;
 }
 .single-project .nextprev a.next {
   /*left: 55%;*/
   position: fixed;
-  top: 50%;
-  right: -5%;
+  top: 36%;
+  right: 0%;
 }
 .single-project .text .project-close {
   cursor: pointer;
@@ -818,7 +838,9 @@ h1 a, h2 a, h3 a, h4 a {
   right: -20%;
   top: 0;
 }
-
+.single-project + footer {
+  display: none;
+}
 
 /* Capabilities
 -------------------------------------------------- */
@@ -836,7 +858,7 @@ h1 a, h2 a, h3 a, h4 a {
   display: inline-block;
   float: left;
   font-size: 4em;
-  font-weight: 800;
+  font-weight: 600;
   left: 75px;
   line-height: 1em;
   position: absolute;
@@ -971,9 +993,6 @@ h1 a, h2 a, h3 a, h4 a {
   white-space: nowrap;
   z-index: 1;
 }
-#aboutLanding .background-mesh {
-  background-image: url('https://i.imgur.com/QLr9IyD.png');
-}
 #aboutBlkbox {
   background: #fff;
   padding: 2em 0;
@@ -1004,8 +1023,8 @@ h1 a, h2 a, h3 a, h4 a {
   flex-flow: row wrap;
   z-index: 1;
 }
-#aboutStaff .background-mesh {
-  background-image: url('https://i.imgur.com/186psjZ.png')
+#aboutStaff {
+  background-size: 70%;
 }
 #aboutStaff > p {
   font-weight: 700;
@@ -1121,9 +1140,6 @@ h1 a, h2 a, h3 a, h4 a {
   min-height: 50%;
   opacity: 0.5;
 }
-.contactContent .background-mesh {
-  background-image: url('https://i.imgur.com/QLr9IyD.png');
-}
 .contactContent .pageTitle {
   margin-top: 2em;
   font-size: 3.5em;
@@ -1147,7 +1163,7 @@ h1 a, h2 a, h3 a, h4 a {
   font-size: .9em;
   margin: 0;
 }
-#boxCont > span {
+#boxCont > a {
   max-width: 240px;
   max-height: 240px;
   min-width: 240px;
@@ -1160,7 +1176,7 @@ h1 a, h2 a, h3 a, h4 a {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-#boxCont > span:hover {
+#boxCont > a:hover {
   color: red;
   border: 5px solid red;
 }
@@ -1226,6 +1242,12 @@ input:-ms-input-placeholder {
 
 /* Footer
 -------------------------------------------------- */
+footer {
+  display: none;
+}
+.home footer, .work footer, .capabilities footer, .about footer, .contact footer {
+  display: block;
+}
 .footer {
   bottom: 0;
   font-size: .8em;
