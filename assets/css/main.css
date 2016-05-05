@@ -730,18 +730,40 @@ h1 a, h2 a, h3 a, h4 a {
   border-bottom: 3px solid #ef4849;
 }
 
+.teaser li:hover > #workHeadlink {
+  color: white;
+}
+
+.teaser li:hover > h1 > a {
+  color: white;
+}
+
+.teaser li:hover > #teaserSubtitle {
+  color: white;
+}
+
 .teaser h3 {
   font-size: 25pt;
   font-weight: 700;
+  color: transparent;
   line-height: 50pt;
   display: inline-block;
 }
 
+
 .teaser h1 {
   font-size: 41.67pt;
   font-weight: 700;
+  color: transparent;
   margin-bottom: 1%;
   line-height: 62.17pt;
+}
+
+.teaser h1 > a {
+  color: transparent;
+  display: inline-block;
+  height: 72px;
+  margin-bottom: -15px;
 }
 
 #teaserSubtitle {
@@ -751,11 +773,6 @@ h1 a, h2 a, h3 a, h4 a {
   text-transform: none;
 }
 
-.teaser li h3 a {
-  display: inline-block;
-  height: 72px;
-  margin-bottom: -15px;
-}
 
 /* Single Project
 -------------------------------------------------- */
