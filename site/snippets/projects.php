@@ -29,6 +29,7 @@
         <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/facebook_white.jpg" alt="Facebook">
         <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/bonotel_white.jpg" alt="Bonotel">
       </div>
+      <br>
       <div class="row">   
         <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/tacobell_white.jpg" alt="Taco Bell">
         <img src="<?php echo $kirby->urls()->assets() ?>/images/logos/melange_white.jpg" alt="Melange Expressions">
