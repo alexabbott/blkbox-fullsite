@@ -14,13 +14,13 @@
   </li>
   <?php endforeach ?>
   
-  <li>
+  <div id="clientList">
 
     <!-- <div class="row clients-header"> -->
       <h3 id="clientList">Clients</h3>
     <!-- </div> -->
 
-  </li>
+  </div>
 
 </ul>
 
