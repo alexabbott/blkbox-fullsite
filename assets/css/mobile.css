@@ -159,13 +159,33 @@
   .teaser {
     margin-top: 30px;
   }
+
+  .teaser li {
+    padding-top: 90px;
+  }
+
+  .teaser h1 {
+    font-size: 25pt;
+    font-weight: 700;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    line-height: 1em;
+  }
+
   .teaser h3 {
-    font-size: 32px;
-    line-height: 30px;
+    font-size: 14pt;
+    line-height: 1em;
   }
   .teaser li h3 a {
     height: 35px;
   }
+
+  #teaserSubtitle {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   .project-image-holder {
     top: 38%;
     width: 270vw;
