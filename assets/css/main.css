@@ -781,6 +781,7 @@ h1 a, h2 a, h3 a, h4 a {
 div#clientList {
   height: 419px;
   padding-top: 50px;
+  background: white;
 }
 
 #clientList h3{
