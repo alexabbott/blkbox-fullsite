@@ -200,9 +200,9 @@ body {
 /* Header
 -------------------------------------------------- */
 .header {
-  height: 75px;
-  margin-bottom: 1.5em;
+  height: 0;
 }
+
 .logo {
   display: block;
   float: left;
