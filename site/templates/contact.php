@@ -2,6 +2,7 @@
 
 <main class="contactContent relative"
       style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/contact.png)">
+
   <span class="background-mesh" style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/black-mesh.png)"></span>
 
   <h1 class="uppercase bold white text-center relative pageTitle"><?php echo $page->header()->html() ?></h1>

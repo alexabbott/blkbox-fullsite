@@ -108,7 +108,7 @@ body {
   background: #000;
   background-size: 100%;
   color: #fff;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .white {
   color: #fff !important;
@@ -200,9 +200,9 @@ body {
 /* Header
 -------------------------------------------------- */
 .header {
-  height: 75px;
-  margin-bottom: 1.5em;
+  height: 0;
 }
+
 .logo {
   display: block;
   float: left;
@@ -493,7 +493,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 
 .main {
-  padding-bottom: 1.5em;
+  padding-bottom: .5em;
 }
 .main hr {
   background: #ddd;
@@ -723,19 +723,130 @@ h1 a, h2 a, h3 a, h4 a {
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
+  background-image: url('../images/blkbox-work-v2_staticBack.jpg');
 }
 .teaser li {
   list-style: none;
+  /*background-image: url("<?php echo $image;?>");*/
+  height: 419px;
+  padding-top:70px;
 }
+
+.teaser li:nth-of-type(1) {
+  height: 416px;
+}
+
+.teaser li:nth-of-type(2) {
+  height: 422px;
+  margin-top: -3px;
+}
+
+.teaser li:nth-of-type(3) {
+  height: 421px;
+  margin-top: 0px;
+}
+
+.teaser li:nth-of-type(4) {
+  height: 421px;
+  margin-top: 0px;
+}
+
+.teaser li:nth-of-type(5) {
+  height: 421px;
+  margin-top: 0px;
+}
+
+.teaser li:hover {
+  background: rgba(0,0,0,.7);
+}
+
+.teaser li:hover > #workHeader {
+  text-transform: none;
+  color: #ef4849;
+  padding-bottom: -15px;
+  border-bottom: 3px solid #ef4849;
+}
+
+.teaser li:hover > #workHeadlink {
+  color: white;
+}
+
+.teaser li:hover > h1 > a {
+  color: white;
+}
+
+.teaser li:hover > #teaserSubtitle {
+  color: white;
+}
+
 .teaser h3 {
-  font-size: 90px;
-  font-weight: 600;
-  line-height: 50px;
+  font-size: 25pt;
+  font-weight: 700;
+  color: transparent;
+  line-height: 50pt;
+  display: inline-block;
 }
-.teaser li h3 a {
+
+
+.teaser h1 {
+  font-size: 31.67pt;
+  font-weight: 700;
+  color: transparent;
+  margin-bottom: 1%;
+  line-height: 62.17pt;
+}
+
+.teaser h1 > a {
+  color: transparent;
   display: inline-block;
   height: 72px;
   margin-bottom: -15px;
+}
+
+#teaserSubtitle {
+  font-size: 25pt;
+  font-weight: 400;
+  line-height: 50pt;
+  text-transform: none;
+  margin-top: -20px;
+}
+
+div#clientList {
+  height: 419px;
+  padding-top: 20px;
+  background: white;
+  bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  left: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+#clientList h3{
+  font-size: 25pt;
+  font-weight: 700;
+  line-height: 50pt;
+  display: inline-block;
+  text-transform: none;
+  color: #ef4849;
+  padding-bottom: -15px;
+  border-bottom: 3px solid #ef4849;
+  margin-bottom: 1.2em;
+}
+
+#clientList .row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#clientList img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12%;
 }
 
 /* Single Project
@@ -1114,7 +1225,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .contact footer {
   z-index: 3;
-  position: absolute;
+  position: relative;
 }
 .contact iframe {
   margin-top: -44px;
@@ -1258,7 +1369,7 @@ footer {
   font-size: .8em;
   left: 0;
   padding: 1em 1.5em 1.5em 1.5em;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 0;
 }
