@@ -137,13 +137,13 @@
   
 
   .work {
-    overflow: hidden;
+    overflow: scroll;
   }
   .work .main {
-    height: 100vh;
+    /*height: 100vh;*/
   }
   .work header {
-    height: 65px;
+    height: 0px;
   }
   .work .logo {
     padding-top: 0.7em;
@@ -157,7 +157,7 @@
     margin-top: 70px;
   }
   .teaser {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
   }
 
   .teaser li {
@@ -184,6 +184,8 @@
   #teaserSubtitle {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 1em;
+    line-height: 1em;
   }
 
   .project-image-holder {
@@ -200,6 +202,11 @@
   .client-list img {
     width: 75px;
   }
+
+  div#clientList {
+    height: 300px;
+  }
+
   .single-project .text {
     left: 5%;
     padding-top: 60px;
