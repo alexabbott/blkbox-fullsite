@@ -7,6 +7,9 @@ $(document).ready(function(){
 		$('main-container').toggleClass('overflow');
 		$('body').toggleClass('fixed');
 		$('main-container').toggleClass('fixed');
+		if (window.innerWidth < 767 && screen.width < 767) {
+			$('#aboutLanding h1').toggleClass('none');
+		}
 	});
 
 	if (window.innerWidth > 767 && screen.width > 767) {

@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-		<a href="<?php echo url() ?>/contact" class="lets-talk bold">Let's talk.</a>
+		<a href="mailto:info@weareblkbox.com?subject=Lets Talk" class="lets-talk bold">Let's talk.</a>
 	</div>
 
   </main>

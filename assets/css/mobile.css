@@ -19,13 +19,13 @@
   .logo {
     color: #fff;
     left: 0;
-    padding-top: 1.2em;
+    padding: 0.8em;
     position: absolute;
     top: 0;
     z-index: 2;
   }
   #nav-icon {
-    margin: 1.3em 1.5em 0 30px;
+    margin: 1em 1.5em 0 30px;
   }
   #nav-icon span {
     background: #fff;
@@ -53,17 +53,22 @@
     color: #fff;
     font-size: 32px;
     height: 40px;
-    line-height: 20px;
+    line-height: 32px;
+    padding-top: 37px;
+    width: 90%;
   }
-
-  /*.menu li:first-of-type {
-    margin-top: 30%;
-  }*/
-
+  .menu li:nth-of-type(4) a {
+    width: 60%;
+  }
+  .menu li:nth-of-type(3) a, .menu li:nth-of-type(4) a {
+    padding-top: 22px;
+  }
   .menu > li {
-    margin-top: 30px;
-    width: 80%;
-    height: 100px;
+    margin: 50px auto 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 120px;
   }
 
 
