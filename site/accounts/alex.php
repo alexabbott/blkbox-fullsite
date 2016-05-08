@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - work/franks
   - home
   - work/frenchs
   - contact
   - capabilities
-  - work/facebook

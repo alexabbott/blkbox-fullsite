@@ -109,7 +109,7 @@
 /* CAPABILITIES
 -------------------------------------------------- */
   .capabilities {
-    height: 240vh;
+    height: auto;
   }
   .capabilities header {
     margin-bottom: 0;
@@ -130,6 +130,9 @@
   }
   .capabilities .subtext {
     width: 100%;
+  }
+  .capabilities .lets-talk {
+    margin-bottom: 50px;
   }
 
 

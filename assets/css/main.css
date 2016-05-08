@@ -209,7 +209,7 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 0em;
-  padding: 1.5em;
+  padding: 1.3em;
   position: absolute;
   transition: color 0.5s ease-out;
   z-index: 1;
@@ -893,7 +893,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .capabilities .bottom-section {
   display: block;
-  height: 500px;
+  height: auto;
   margin: 0 auto;
   text-align: center;
   width: 80%;
