@@ -21,7 +21,7 @@ $(document).ready(function(){
 			}, 200);
 			$('.get-animation').attr('src', giffy + "?a=" + Math.random());
 			$(this).mouseup(function() {
-				window.location.pathname += 'about';
+				$('.get-animation').css({'opacity':'0'});
 			});
 		});
 	}
@@ -45,6 +45,15 @@ $(document).ready(function(){
 		if ($('.square').css('transform') == "matrix(20, 0, 0, 20, -50, -76)") {
 			window.location.pathname += 'about';
 		}
+	});
+
+	$('body').on('click', '.fa-volume-up', function(){
+		document.getElementsByTagName('video')[0].muted = true;
+		$(this).attr('class','fa fa-volume-off');
+	});
+	$('body').on('click', '.fa-volume-off', function(){
+		document.getElementsByTagName('video')[0].muted = false;
+		$(this).attr('class','fa fa-volume-up');
 	});
 
 	// show project images on mouseover

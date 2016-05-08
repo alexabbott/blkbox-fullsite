@@ -44,3 +44,63 @@ Sub: its not.
 ----
 
 Small: hold down to load
+
+----
+
+Landingtext: 
+
+#LOVE ME OR HATE 
+#ME AS LONG AS YOU
+#UNDERSTAND ME<span class="red"></span>
+
+----
+
+Headline: <em>B</em>LKBOX
+
+----
+
+Intro: ##is your access to our mystifying, complicated open-minded and world-changing generation-<span class="underline">millennials</span>.
+
+----
+
+Body: We're young, but we're experienced. Not know-it-alls. In fact we don't know all of the answers, but we're gonna have a hell of a time finding them. We're unapologetic, not arrogant. We're creators, not fluffers. We're passionate AF. And we know one thing is true. You have to GET UNCOMFORTABLE to grow.
+
+----
+
+Staffheader: Our Leadership
+
+----
+
+Staff1: Keenan Beasley
+
+----
+
+Staff1title: Co-Founder
+
+----
+
+Staff2: Dionna McPhatter
+
+----
+
+Staff2title: Co-Founder
+
+----
+
+Staff3: Soomean Chang
+
+----
+
+Staff3title: Creative
+
+----
+
+Staff4: Jermaine Clark
+
+----
+
+Staff4title: Government
+
+----
+
+Gramtag: catch us up on the gram

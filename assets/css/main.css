@@ -244,7 +244,7 @@ nav {
   color: #fff;
   height: 100vh;
   opacity: 1;
-  padding-top: 35vh;
+  padding-top: 34vh;
   pointer-events: initial;
   position: absolute;
   right: 0;
@@ -277,9 +277,9 @@ nav {
   vertical-align: middle;
 }
 .menu > li {
-  height: 15vw;
+  height: 18vw;
   position: relative;
-  width: 15vw;
+  width: 18vw;
 }
 
 .menu li:hover {
@@ -289,24 +289,25 @@ nav {
 }
 .menu > li > a {
   color: #fff;
-  font-size: 3.8vw;
+  font-size: 4.3vw;
   font-weight: 600;
   height: 100%;
   line-height: 4vw;
-  padding-top: 5vw;
+  padding-top: 6.3vw;
   text-transform: none;
   width: 82%;
   word-break: break-all;
 }
+
 .menu li:nth-of-type(4) a {
-  width:50%;
+  width: 50%;
 }
 .menu li:nth-of-type(3) a, .menu li:nth-of-type(4) a {
-  padding-top: 3.2vw;
+  padding-top: 4.1vw;
 }
-}
+
 .menu > li > a:hover {
-  color: #fff !important;
+  color: #ff0000 !important;
 }
 .submenu {
   display: none;
@@ -469,6 +470,9 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* Main
 -------------------------------------------------- */
+.home {
+  height: auto;
+}
 .home .menu.show {
   z-index: 5;
 }
@@ -491,7 +495,6 @@ h1 a, h2 a, h3 a, h4 a {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
 .main {
   padding-bottom: 1.5em;
 }
@@ -516,7 +519,17 @@ h1 a, h2 a, h3 a, h4 a {
   position: relative;
   width: 100vw;
 }
-
+.home .video-holder .fa-volume-up, .home .video-holder .fa-volume-off {
+  bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  z-index: 3;
+}
+.home .video-holder .fa-volume-off {
+  right: 19px;
+}
 .home .video-overlay {
   cursor: pointer;
   height: 100vh;
@@ -906,17 +919,18 @@ h1 a, h2 a, h3 a, h4 a {
 .capabilities .box {
   border: 6px solid #fff;
   box-sizing: border-box;
-  font-size: 1.2em;
+  font-size: 1.7em;
   font-weight: 700;
-  height: 200px;
+  height: 260px;
+  line-height: 1em;
   margin: 50px auto 0 auto;
-  padding: 33px 10px 10px 10px;
+  padding: 52px 10px 10px 10px;
   text-align: center;
   text-transform: uppercase;
-  width: 200px;
+  width: 260px;
 }
 .capabilities .right-side .box {
-  padding: 35px 30px 10px 30px;
+  padding: 55px 30px 10px 30px;
 }
 .capabilities .subtext {
   font-size: 0.7em;
@@ -924,7 +938,7 @@ h1 a, h2 a, h3 a, h4 a {
   line-height: 1.3em;
   margin: 20px auto 0 auto;
   text-align: center;
-  width: 315px;
+  width: 260px;
 }
 .capabilities .lets-talk {
   border-bottom: 4px solid #ff0000;
@@ -979,29 +993,46 @@ h1 a, h2 a, h3 a, h4 a {
   z-index: 1;
 }
 #aboutLanding {
-  width: 100%;
-  height: 75vh;
+  align-items: flex-start;
   background-repeat: none;
   background-size: cover;
   background-position: center center;
-  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
 }
 #aboutLanding h1 {
   font-weight: 700;
   font-size: 4em;
+  line-height: 1em;
   margin: 0 0 0 1em;
   white-space: nowrap;
   z-index: 1;
 }
+#aboutLanding h1 span {
+  background: #ff0000;
+  display: inline-block;
+  height: 16px;
+  margin-left: 7px;
+  margin-top: 22px;
+  vertical-align: middle;
+  width: 16px;
+}
 #aboutBlkbox {
   background: #fff;
   padding: 2em 0;
+}
+#aboutBlkbox .intro {
+  margin-top: -20px;
 }
 #aboutBlkbox h2, #aboutBlkbox h3 {
   font-weight: 700;
   max-width: 900px;
   margin: .5em auto;
   color: #000 !important;
+}
+#aboutBlkbox h2 {
+  font-size: 1.8em;
+  max-width: 1000px;
 }
 #aboutBlkbox > h3 {
   font-size: 3em;
@@ -1011,9 +1042,12 @@ h1 a, h2 a, h3 a, h4 a {
   margin: 0 auto;
 }
 #aboutBlkbox p {
-  max-width: 800px;
+  max-width: 890px;
   margin: 1em auto;
   color: #000 !important;
+}
+#aboutBlkbox > p {
+  font-weight: 200;
 }
 #aboutBlkbox,
 #aboutStaff {
@@ -1038,18 +1072,18 @@ h1 a, h2 a, h3 a, h4 a {
 }
 #aboutStaff .staffMember {
   margin: 15px;
-  width: 200px;
+  width: 260px;
   align-items: center;
 }
 #aboutStaff .staffMember .imgCont {
-  width: 100%;
-  height: 200px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   border: 4px solid #fff;
   box-sizing: border-box;
+  height: 260px;
   margin: 0 auto 1em;
+  width: 260px;
 }
 #aboutStaff .staffMember .staffId {
   width: 100%;
@@ -1070,12 +1104,10 @@ h1 a, h2 a, h3 a, h4 a {
 }
 #aboutGram {
   margin: 100px auto 0 auto;
-  max-width: 1200px;
 }
 #photoStream {
   margin: 2em 0;
-  width: 120%;
-  transform: translateX(-10%);
+  width: 100%;
 }
 #photoStream .imgCont {
   border: 5px solid #fff;
@@ -1095,7 +1127,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 #AboutContent #letsTalk {
   border-bottom: 3px solid rgba(255,0,0,1);
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 #AboutContent #letsTalk a {
   color: white !important;
@@ -1151,10 +1183,10 @@ h1 a, h2 a, h3 a, h4 a {
   opacity: 1;
 }
 #boxCont {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
   flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 850px;
+  width: 100%;
 }
 #boxCont h1 {
   font-size: 2.5em;
@@ -1169,10 +1201,10 @@ h1 a, h2 a, h3 a, h4 a {
   margin: 0;
 }
 #boxCont > a {
-  max-width: 240px;
-  max-height: 240px;
-  min-width: 240px;
-  min-height: 240px;
+  max-width: 260px;
+  max-height: 260px;
+  min-width: 260px;
+  min-height: 260px;
   border: 5px solid white;
   box-sizing: border-box;
   margin: 10px;
@@ -1253,9 +1285,12 @@ footer {
 .home footer, .work footer, .capabilities footer, .about footer, .contact footer {
   display: block;
 }
+.home .footer, .home .footer .colophon .right a {
+  color: #fff;
+}
 .footer {
   bottom: 0;
-  font-size: .8em;
+  font-size: .6em;
   left: 0;
   padding: 1em 1.5em 1.5em 1.5em;
   position: absolute;
@@ -1287,6 +1322,9 @@ footer {
 }
 .colophon .right a {
   margin-left: 20px;
+}
+.footer .colophon .right a i {
+  font-size: 1.3em;
 }
 .colophon a b {
   color: red;

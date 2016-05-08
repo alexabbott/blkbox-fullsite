@@ -17,5 +17,19 @@
 
   </footer>
 
+  <script>
+    $('.about-menu').attr('href','<?php echo url() ?>/#AboutContent');
+    if ($('body').hasClass('home')) {
+      $('.about-menu').on('click', function(){
+        $('#nav-icon').toggleClass('open');
+        $('.menu').toggleClass('show');
+        $('body').toggleClass('overflow');
+        $('main-container').toggleClass('overflow');
+        $('body').toggleClass('fixed');
+        $('main-container').toggleClass('fixed');
+        document.getElementById('AboutContent').scrollIntoView();
+      });
+    }
+  </script>
 </body>
 </html>

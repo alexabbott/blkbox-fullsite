@@ -76,11 +76,7 @@
 -------------------------------------------------- */
   .home {
     background: #000;
-    height: 150vh;
-  }
-  .home .main-container {
-    overflow: hidden;
-    position: fixed;
+    height: auto;
   }
   .main .big-text {
     font-size: 52px;
@@ -139,7 +135,6 @@
 
 /* PROJECTS
 -------------------------------------------------- */
-  
 
   .work {
     overflow: hidden;
@@ -216,11 +211,19 @@
 
 /* ABOUT
 -------------------------------------------------- */
+  #aboutLanding {
+    height: 50vh;
+  }
   #aboutLanding h1 {
-    font-size: 2em !important;
+    font-size: 1.6em !important;
     width: 90% !important;
     margin: 0 auto !important;
     text-align: left;
+  }
+  #aboutLanding h1 span {
+    height: 10px;
+    margin-top: 9px;
+    width: 10px;
   }
   #aboutBlkbox p {
     width: 90% !important;
@@ -231,7 +234,7 @@
     font-size: 1.2em !important;
   }
   #aboutBlkbox h3 {
-    font-size: 0.8em !important;
+    font-size: 2em !important;
   }
   #aboutStaff {
     flex-flow: column !important;
@@ -283,7 +286,7 @@
 -------------------------------------------------- */
 
   .home .footer {
-    bottom: -290px;
+    bottom: -50px;
     color: #000;
   }
   .home .footer .colophon a {
