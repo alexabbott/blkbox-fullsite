@@ -138,50 +138,35 @@
 
 /* PROJECTS
 -------------------------------------------------- */
-
-  .work {
-    overflow: hidden;
+  .work .main-container {
+    margin-top: 0;
   }
-  .work .main {
-    height: 100vh;
+  .work .teaser {
+    margin-top: 75px;
   }
-  .work header {
-    height: 65px;
+  .work .teaser li {
+    height: 200px;
   }
-  .work .logo {
-    padding-top: 0.7em;
+  .work .main-image {
+    background-position-x: 70% !important;
   }
-  .work #nav-icon {
-    left: 69vw;
-    margin-top: 0.9em;
-    right: auto;
+  .work .main-client {
+    font-size: 0.9em;
+    height: 41px;
+    margin-bottom: 13px;
   }
-  .work-title {
-    margin-top: 70px;
+  .work .main-headline {
+    font-size: 1.2em;
+    margin-bottom: 0;
   }
-  .teaser {
-    margin-top: 30px;
-  }
-  .teaser h3 {
-    font-size: 32px;
-    line-height: 30px;
-  }
-  .teaser li h3 a {
-    height: 35px;
-  }
-  .project-image-holder {
-    top: 38%;
-    width: 270vw;
-  }
-  .client-title {
-    font-size: 20px;
-    margin-top: 30px;
-  }
-  .client-list {
-    bottom: 45px;
+  .work .main-subtitle {
+    font-size: 0.9em;
   }
   .client-list img {
     width: 75px;
+  }
+  .work .colophon .right {
+    bottom: 15px;
   }
   .single-project .text {
     left: 5%;
@@ -267,11 +252,11 @@
     position: fixed;
   }
   .contact {
-    height: 230vh;
+    height: auto;
     overflow-y: scroll !important;
   }
   .contactContent {
-    min-height: 230vh;
+    min-height: auto;
   }
   .contactContent > h1 {
     font-size: 2em !important;
@@ -283,6 +268,9 @@
   }
   #boxCont .box {
     flex: initial !important;
+  }
+  #contactCTA {
+    margin-bottom: 50px;
   }
 
 /* Footer

@@ -35,3 +35,67 @@ Headline: You looked better on Facebook
 ----
 
 Subtitle: Handy & Retail Me Not
+
+----
+
+Postimage: facebook.jpg
+
+----
+
+Stat1: 
+
+----
+
+Stat1subtext: 
+
+----
+
+Stat2: 
+
+----
+
+Stat2subtext: 
+
+----
+
+Stat3: 
+
+----
+
+Stat3subtext: 
+
+----
+
+Projectbigtext: 
+
+----
+
+Projectimage1: facebook.jpg
+
+----
+
+Teasertext1: 
+
+----
+
+Projectimage2: facebook.jpg
+
+----
+
+Teasertext2: 
+
+----
+
+Projectimage3: facebook.jpg
+
+----
+
+Teasertext3: 
+
+----
+
+Projectimage4: facebook.jpg
+
+----
+
+Teasertext4: 

@@ -35,3 +35,67 @@ Headline: But first, coffee.
 ----
 
 Subtitle: We gave shake-lovers a customizable coffee shop at home
+
+----
+
+Postimage: beachbody.jpg
+
+----
+
+Stat1: 
+
+----
+
+Stat1subtext: 
+
+----
+
+Stat2: 
+
+----
+
+Stat2subtext: 
+
+----
+
+Stat3: 
+
+----
+
+Stat3subtext: 
+
+----
+
+Projectbigtext: 
+
+----
+
+Projectimage1: beachbody.jpg
+
+----
+
+Teasertext1: 
+
+----
+
+Projectimage2: beachbody.jpg
+
+----
+
+Teasertext2: 
+
+----
+
+Projectimage3: beachbody.jpg
+
+----
+
+Teasertext3: 
+
+----
+
+Projectimage4: beachbody.jpg
+
+----
+
+Teasertext4: 

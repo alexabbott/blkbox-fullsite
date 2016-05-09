@@ -35,3 +35,67 @@ Headline: "I don't want to be understood" - said no one ever.
 ----
 
 Subtitle: Insights! Insights! Insights! To help Piercing Pagoda really "get" their girl.
+
+----
+
+Postimage: piercing.jpg
+
+----
+
+Stat1: 
+
+----
+
+Stat1subtext: 
+
+----
+
+Stat2: 
+
+----
+
+Stat2subtext: 
+
+----
+
+Stat3: 
+
+----
+
+Stat3subtext: 
+
+----
+
+Projectbigtext: 
+
+----
+
+Projectimage1: piercing.jpg
+
+----
+
+Teasertext1: 
+
+----
+
+Projectimage2: piercing.jpg
+
+----
+
+Teasertext2: 
+
+----
+
+Projectimage3: piercing.jpg
+
+----
+
+Teasertext3: 
+
+----
+
+Projectimage4: piercing.jpg
+
+----
+
+Teasertext4: 

@@ -35,3 +35,67 @@ Headline: Looking good, feeling good, tasting great!
 ----
 
 Subtitle: Original yellow paid Dr. 90210 a visit for a full-body makeover
+
+----
+
+Postimage: frenchs.jpg
+
+----
+
+Stat1: 
+
+----
+
+Stat1subtext: 
+
+----
+
+Stat2: 
+
+----
+
+Stat2subtext: 
+
+----
+
+Stat3: 
+
+----
+
+Stat3subtext: 
+
+----
+
+Projectbigtext: 
+
+----
+
+Projectimage1: frenchs.jpg
+
+----
+
+Teasertext1: 
+
+----
+
+Projectimage2: frenchs.jpg
+
+----
+
+Teasertext2: 
+
+----
+
+Projectimage3: frenchs.jpg
+
+----
+
+Teasertext3: 
+
+----
+
+Projectimage4: frenchs.jpg
+
+----
+
+Teasertext4: 

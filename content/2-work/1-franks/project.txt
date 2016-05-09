@@ -35,3 +35,67 @@ Headline: "Ethel’s Got Hot Sauce in Her Bag *Swag"
 ----
 
 Subtitle: Turning your life from a hotmess to just hot
+
+----
+
+Postimage: franks.jpg
+
+----
+
+Stat1: 
+
+----
+
+Stat1subtext: 
+
+----
+
+Stat2: 
+
+----
+
+Stat2subtext: 
+
+----
+
+Stat3: 
+
+----
+
+Stat3subtext: 
+
+----
+
+Projectbigtext: 
+
+----
+
+Projectimage1: franks.jpg
+
+----
+
+Teasertext1: 
+
+----
+
+Projectimage2: franks.jpg
+
+----
+
+Teasertext2: 
+
+----
+
+Projectimage3: franks.jpg
+
+----
+
+Teasertext3: 
+
+----
+
+Projectimage4: franks.jpg
+
+----
+
+Teasertext4: 

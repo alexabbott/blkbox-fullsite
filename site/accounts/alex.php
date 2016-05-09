@@ -8,7 +8,7 @@ language: en
 role: admin
 history:
   - work/franks
-  - home
   - work/frenchs
-  - contact
-  - capabilities
+  - work/piercing-pagoda
+  - work/beachbody
+  - work/facebook

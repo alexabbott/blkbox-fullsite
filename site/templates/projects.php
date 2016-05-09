@@ -2,17 +2,9 @@
 
   <main class="main animated fadeInUp" role="main">
 
-	<h4 class="work-title animated fadeIn">Work.</h4>
-
 	<?php snippet('projects') ?>
 
-	<h4 class="client-title">
-		view full client list
-		<div></div>
-	</h4>
-
 	<div class="client-list">
-		<div class="row clients-close">&times;</div>
 		<div class="row clients-header">
 			Clients
 		</div>

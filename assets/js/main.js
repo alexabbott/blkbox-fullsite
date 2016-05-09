@@ -56,26 +56,4 @@ $(document).ready(function(){
 		$(this).attr('class','fa fa-volume-up');
 	});
 
-	// show project images on mouseover
-	$('.teaser li h3 a').on('mouseover', function () {
-		$('.project-image-holder').css('display','none');
-		$(this).parent().parent().find('.project-image-holder').css('display','block');
-		$('.teaser li h3 a').css('border-bottom','none');
-		$(this).css('border-bottom','5px solid #ff0000');
-	});
-
-	// show hide client list
-	$('.client-title').on('click', function() {
-		$('.client-list').css('display','block');
-		setTimeout(function() {
-			$('.client-list').css('transform','translate3d(0,25px,0)');
-		}, 100);
-	});
-	$('.clients-close').on('click', function() {
-		$('.client-list').css('transform','translate3d(0,350px,0)');
-		setTimeout(function() {
-			$('.client-list').css('display','none');
-		}, 1000);
-	});
-
 });

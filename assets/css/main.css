@@ -108,7 +108,6 @@ body {
   background: #000;
   background-size: 100%;
   color: #fff;
-  overflow: hidden;
 }
 .white {
   color: #fff !important;
@@ -644,66 +643,98 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* Projects
 -------------------------------------------------- */
-
+.work {
+  height: auto;
+}
 .work .main {
   text-align: center;
 }
-.project-image-holder {
-  display: none;
-  left: 50%;
-  position: absolute;
-  top: 46%;
-  transform: translate(-50%, -50%);
-  width: 105vw;
-  z-index: -1;
+.work .main-container {
+  margin-top: -105px;
 }
-.project-image-holder img {
-  opacity: 0.7;
+.teaser li {
+  height: 400px;
+  position: relative;
+}
+.work .teaser li:hover .main-image {
+  opacity: 0.3;
+}
+.work .teaser li:hover .work-teaser-text {
+  opacity: 1;
+}
+.work .work-teaser-text {
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity 0.2s ease-out;
+  width: 90%;
+}
+.work .main-image {
+  background-position-y: 25% !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.2s ease-out;
   width: 100%;
 }
-.work-title, .client-title {
-  color: #fff;
-  text-align: center;
-}
-.work-title {
-  margin-top: -15px;
-  margin-bottom: 30px;
-}
-.client-title {
-  cursor: pointer;
+.work .main-client {
+  border-bottom: 4px solid #ff0000;
+  color: #ff0000;
   display: inline-block;
-  margin-top: -40px;
+  font-size: 1.5em;
+  font-weight: 600;
+  height: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: none;
 }
-.client-title div {
-  border-bottom: 5px solid #ff0000;
-  margin: 0 auto;
-  width: 30px;
+.work .main-headline {
+  color: #fff;
+  font-size: 2.3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.work .main-subtitle {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: none;
 }
 .client-list {
-  background: rgba(0,0,0,0.8);
-  bottom: 0;
+  background: #fff;
   box-sizing: border-box;
-  display: none;
-  height: 321px;
-  left: 0;
+  margin-bottom: 40px;
   padding: 30px 0;
-  position: absolute;
   text-align: center;
-  transform: translate3d(0, 350px, 0);
-  transition: transform .3s ease-out;
   width: 100%;
 }
+.client-list .clients-header {
+  border-bottom: 4px solid #ff0000;
+  color: #ff0000;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 600;
+  height: 37px;
+  letter-spacing: 2px;
+  margin-bottom: 10px !important;
+  text-transform: none;
+}
 .client-list .row {
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .client-list img {
   display: inline-block;
-  width: 150px;
-}
-.client-list .row.clients-header {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  width: 165px;
 }
 .client-list .row.clients-close {
   cursor: pointer;
