@@ -27,11 +27,6 @@
     </span>
     <!-- Begin MailChimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      div.mce_inline_error {
-        display: none;
-      }
-    </style>
     <div id="mc_embed_signup">
     <form action="//weareblkbox.us13.list-manage.com/subscribe/post?u=66c0110c974d571246ac52630&amp;id=004da7f262" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">

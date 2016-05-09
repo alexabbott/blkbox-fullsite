@@ -1277,6 +1277,30 @@ h1 a, h2 a, h3 a, h4 a {
 
 #contactCTA input {
   height: 30px;
+  border-radius: 4px;
+}
+#contactCTA input[type="email"] {
+  width: 200px !important;
+  margin: 0 auto !important;
+}
+#contactCTA input[type="submit"] {
+  margin-top: 1em !important;
+  width: 66px !important;
+  cursor: pointer !important;
+  color: white !important;
+  padding: 0 !important;
+}
+#contactCTA div.mce_inline_error {
+  display: none !important;
+}
+#mc_embed_signup .mc-field-group {
+  min-height: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+#mc_embed_signup form {
+  text-align: center !important;
+  padding: 0 !important;
 }
 
 #email {
