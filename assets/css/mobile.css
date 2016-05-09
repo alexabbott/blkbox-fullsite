@@ -130,10 +130,9 @@
   }
   .capabilities .subtext {
     width: 100%;
+    font-size: 0.9em;
   }
-  .capabilities .lets-talk {
-    margin-bottom: 50px;
-  }
+
 
 
 /* PROJECTS

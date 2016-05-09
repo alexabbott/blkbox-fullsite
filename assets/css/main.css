@@ -208,7 +208,7 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 0em;
-  padding: 1.3em;
+  padding: 1.3em 1.3em 1.3em 20px;
   position: absolute;
   transition: color 0.5s ease-out;
   z-index: 1;
@@ -250,7 +250,7 @@ nav {
 
 .menu.show li:nth-child(1) {
   color: blue;
-}  
+}
 
 .menu a {
   box-sizing: border-box;
@@ -339,7 +339,7 @@ nav {
   cursor: pointer;
   float: right;
   height: 45px;
-  margin: 1.5em 1.5em 0 30px;
+  margin: 1.5em 20px 0 30px;
   position: absolute;
   right: 0;
   width: 30px;
@@ -993,6 +993,7 @@ h1 a, h2 a, h3 a, h4 a {
   cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .capabilities .lets-talk:hover {
   border-bottom: 4px solid #ff0000;
@@ -1248,15 +1249,14 @@ h1 a, h2 a, h3 a, h4 a {
   margin: 0;
 }
 #boxCont > a {
-  max-width: 260px;
-  max-height: 260px;
-  min-width: 260px;
-  min-height: 260px;
+  max-width: 230px;
+  max-height: 230px;
+  min-width: 230px;
+  min-height: 230px;
   border: 5px solid white;
   box-sizing: border-box;
   margin: 10px;
   color: white;
-  flex: 1 0 33%;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
@@ -1292,20 +1292,20 @@ input::-webkit-input-placeholder {
     color: #a0a1a4;
     padding-left: 5px;
 }
- 
+
 input:-moz-placeholder { /* Firefox 18- */
     color: #a0a1a4;
-    padding-left: 5px;  
-}
- 
-input::-moz-placeholder {  /* Firefox 19+ */
-    color: #a0a1a4;  
     padding-left: 5px;
 }
- 
-input:-ms-input-placeholder {  
+
+input::-moz-placeholder {  /* Firefox 19+ */
     color: #a0a1a4;
-    padding-left: 5px;  
+    padding-left: 5px;
+}
+
+input:-ms-input-placeholder {
+    color: #a0a1a4;
+    padding-left: 5px;
 }
 
 /* Next/Prev nav
