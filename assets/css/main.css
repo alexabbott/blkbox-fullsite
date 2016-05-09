@@ -94,10 +94,9 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  background: #fff;
+  background: #000;
   color: #222;
   font-size: 1.25em;
-  height: 100vh;
   line-height: 1.5em;
   margin: 0 auto;
   max-width: 100%;
@@ -204,6 +203,7 @@ body {
 }
 .logo {
   display: block;
+  color: #fff;
   float: left;
   font-size: 1.5em;
   font-weight: 600;
@@ -212,12 +212,6 @@ body {
   position: absolute;
   transition: color 0.5s ease-out;
   z-index: 1;
-}
-.work .logo, .capabilities .logo {
-  color: #fff;
-}
-.logo img {
-  width: 2em;
 }
 
 
@@ -361,7 +355,7 @@ nav {
 }
 
 #nav-icon span {
-  background: #000;
+  background: #fff;
   display: block;
   left: 0;
   opacity: 1;
@@ -784,17 +778,18 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* Single Project
 -------------------------------------------------- */
+.single-project .top-image {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
 .single-project .text {
   background: #fff;
   color: #000;
   height: auto;
-  min-height: 100vh;
   padding: 40px;
-  position: absolute;
   text-align: center;
-  top: 0;
-  width: 50%;
-  z-index: 1;
+  width: 100%;
 }
 .single-project em {
   font-size: 60px;
@@ -821,6 +816,13 @@ h1 a, h2 a, h3 a, h4 a {
   letter-spacing: 1px;
   margin-bottom: 30px;
   color: black;
+}
+.single-project .project-image {
+  border-top: 30px solid #fff;
+  width: 100%;
+}
+.single-project .project-image:last-of-type {
+  margin-bottom: 30px;
 }
 
 .project-desc p {
@@ -866,24 +868,38 @@ h1 a, h2 a, h3 a, h4 a {
   top: 36%;
   right: 0%;
 }
-.single-project .text .project-close {
-  cursor: pointer;
-  font-size: 36px;
-  right: 5%;
-  position: absolute;
-  top: 20px;
-}
-.single-project .text .project-close a {
-  color: #a0a1a4;
-}
 .single-project figure {
   height: 100vh;
   position: fixed;
   right: -20%;
   top: 0;
 }
-.single-project + footer {
-  display: none;
+.single-project .project-area {
+  background: #fff;
+  position: relative;
+}
+.single-project .project-area .project-area-text {
+  background: #fff;
+  box-sizing: border-box;
+  border: 8px solid #000;
+  color: #000;
+  display: table;
+  height: 400px;
+  left: 50px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+}
+.single-project .project-area:nth-of-type(odd) .project-area-text {
+  left: auto;
+  right: 50px;
+}
+.single-project .project-area .project-area-text .text-inner {
+  color: #000;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* Capabilities
@@ -1310,13 +1326,10 @@ input:-ms-input-placeholder {
 
 /* Footer
 -------------------------------------------------- */
-footer {
-  display: none;
-}
 .home footer, .work footer, .capabilities footer, .about footer, .contact footer {
   display: block;
 }
-.home .footer, .home .footer .colophon .right a {
+.footer, .footer .colophon .right a {
   color: #fff;
 }
 .footer {

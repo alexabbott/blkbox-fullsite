@@ -147,6 +147,12 @@
   .work .teaser li {
     height: 200px;
   }
+  .half-opacity {
+    opacity: 0.4;
+  }
+  .opacity {
+    opacity: 1;
+  }
   .work .main-image {
     background-position-x: 70% !important;
   }
@@ -161,6 +167,7 @@
   }
   .work .main-subtitle {
     font-size: 0.9em;
+    line-height: 1.4em;
   }
   .client-list img {
     width: 75px;

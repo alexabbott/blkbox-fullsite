@@ -99,3 +99,35 @@ Projectimage4: franks.jpg
 ----
 
 Teasertext4: 
+
+----
+
+Text1: test1
+
+----
+
+Subtext1: test1
+
+----
+
+Text2: test2
+
+----
+
+Subtext2: test2
+
+----
+
+Text3: test3
+
+----
+
+Subtext3: test3
+
+----
+
+Text4: test4
+
+----
+
+Subtext4: test4

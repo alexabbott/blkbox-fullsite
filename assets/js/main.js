@@ -56,4 +56,23 @@ $(document).ready(function(){
 		$(this).attr('class','fa fa-volume-up');
 	});
 
+	if (window.innerWidth < 767 || screen.width < 767) {
+		var teasers = document.querySelectorAll('.teaser-link');
+		var links = [];
+		for (var n = 0; n < teasers.length; n++) {
+			links.push(teasers[n].getAttribute('href'));
+		}
+		$('.teaser li').unwrap();
+		$('.teaser li').each(function(index){
+			$(this).on('touchstart', function(){
+				$('.work-teaser-text').removeClass('opacity');
+				$('.main-image').removeClass('half-opacity');
+				$(this).find('.work-teaser-text').addClass('opacity');
+				$(this).find('.main-image').addClass('half-opacity');
+				$('.teaser a li').unwrap();
+				$(this).wrap('<a href="' + links[index] + '"></a>');
+			});
+		});
+	}
+
 });

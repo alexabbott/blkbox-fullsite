@@ -53,8 +53,11 @@ fields:
     mode:  single
     types:
         - all
-  teasertext1:
-    label: Teaser Text 1
+  text1:
+    label: Text 1
+    type: text
+  subtext1:
+    label: Subtext 1
     type: textarea
   projectimage2:
     label: Project Image/Video 2
@@ -62,8 +65,11 @@ fields:
     mode:  single
     types:
         - all
-  teasertext2:
-    label: Teaser Text 2
+  text2:
+    label: Text 2
+    type: text
+  subtext2:
+    label: Subtext 2
     type: textarea
   projectimage3:
     label: Project Image/Video 3
@@ -71,8 +77,11 @@ fields:
     mode:  single
     types:
         - all
-  teasertext3:
-    label: Teaser Text 3
+  text3:
+    label: Title 3
+    type: text
+  subtext3:
+    label: Subtext 3
     type: textarea
   projectimage4:
     label: Project Image/Video 4
@@ -80,6 +89,9 @@ fields:
     mode:  single
     types:
         - all
-  teasertext4:
-    label: Teaser Text 4
+  text4:
+    label: Title 4
+    type: text
+  subtext4:
+    label: Subext 4
     type: textarea
