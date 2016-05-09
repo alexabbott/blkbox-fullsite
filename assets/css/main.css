@@ -821,7 +821,7 @@ h1 a, h2 a, h3 a, h4 a {
   border-top: 30px solid #fff;
   width: 100%;
 }
-.single-project .project-image:last-of-type {
+.single-project .project-area:last-of-type .project-image {
   margin-bottom: 30px;
 }
 
