@@ -276,7 +276,7 @@
     flex: initial !important;
   }
   #contactCTA {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
 /* Footer
@@ -294,6 +294,15 @@
   }
   footer .copyright {
     display: none;
+  }
+  .colophon .right {
+    width: 100%;
+    text-align: center;
+    right: 0;
+  }
+  .colophon .right a {
+    margin: 0 10px !important;
+    margin-left: auto !important;
   }
 }
 
