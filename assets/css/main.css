@@ -861,8 +861,10 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .single-project .big-text-holder .big-text-inner h2 {
   color: #000;
-  font-size: 58px;
+  font-size: 64px;
   font-weight: 600;
+  margin: 0 auto;
+  max-width: 70%;
 }
 .single-project .big-text-holder .big-text-inner p {
   margin-bottom: 0;
@@ -918,7 +920,7 @@ h1 a, h2 a, h3 a, h4 a {
   transform: translateY(-50%);
   width: 400px;
 }
-.single-project .project-area:nth-of-type(odd) .project-area-text {
+.single-project .project-area:nth-of-type(even) .project-area-text {
   left: auto;
   right: 70px;
 }
