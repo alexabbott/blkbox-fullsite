@@ -28,7 +28,7 @@
     <!-- Begin MailChimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <div id="mc_embed_signup">
-    <form action="//weareblkbox.us13.list-manage.com/subscribe/post?u=66c0110c974d571246ac52630&amp;id=004da7f262" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="//thestrategycollective.us11.list-manage.com/subscribe/post?u=ab37eda8e39faa756d16e5816&amp;id=6e06feda51" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
 
     <div class="mc-field-group">
@@ -38,7 +38,7 @@
         <div class="response" id="mce-error-response" style="display:none"></div>
         <div class="response" id="mce-success-response" style="display:none"></div>
       </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_66c0110c974d571246ac52630_004da7f262" tabindex="-1" value=""></div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ab37eda8e39faa756d16e5816_6e06feda51" tabindex="-1" value=""></div>
         <div class="clear"><input type="submit" value="submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </div>
     </form>

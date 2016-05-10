@@ -174,11 +174,17 @@
   .work .colophon .right {
     bottom: 15px;
   }
+  .project .main-container {
+    margin-top: 0;
+  }
+  .single-project .top-image {
+    height: 300px;
+  }
   .single-project .text {
     left: 5%;
     padding-top: 60px;
     top: 85px;
-    width: 90%;
+    width: 100%;
   }
   .single-project .text .headline {
     font-size: 32px;
@@ -196,11 +202,40 @@
     height: 100%;
     max-width: none;
   }
+  .single-project .stat-holder {
+    height: auto;
+    padding: 65px 0 0 0;
+  }
+  .single-project .all-projects {
+    background: #fff;
+    padding-top: 30px;
+  }
+  .single-project .project-image {
+    border-top: 0;
+  }
+  .single-project .project-area {
+    margin-top: 30px;
+  }
+  .single-project .project-area .project-area-text {
+    height: 200px;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%,-50%);
+    width: 200px;
+  }
+  .single-project .project-area:nth-of-type(odd) .project-area-text {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%,-50%);
+  }
   .single-project .nextprev a.prev {
     left: 8%;
   }
   .single-project .nextprev a.next {
     /*left: 60%;*/
+  }
+  .single-project .stat-holder .stat-inner .stat {
+    width: 100%;
   }
 
 /* ABOUT

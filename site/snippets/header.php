@@ -21,8 +21,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 </head>
-<body class="<?php echo $page->title()->lower()->html() ?>">
-
+<body class="<?php echo $page->title()->lower()->html() ?> <?php echo $page->intendedTemplate() ?>">
   <header class="header cf" role="banner">
     <a class="logo animated fadeInDown" href="<?php echo url() ?>">
       <em>B</em>LKBOX

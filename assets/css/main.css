@@ -465,6 +465,7 @@ h1 a, h2 a, h3 a, h4 a {
 -------------------------------------------------- */
 .home {
   height: auto;
+  overflow-x: hidden;
 }
 .home .menu.show {
   z-index: 5;
@@ -778,6 +779,9 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* Single Project
 -------------------------------------------------- */
+.project .main-container {
+  margin-top: -105px;
+}
 .single-project .top-image {
   height: 600px;
   object-fit: cover;
@@ -821,10 +825,6 @@ h1 a, h2 a, h3 a, h4 a {
   border-top: 30px solid #fff;
   width: 100%;
 }
-.single-project .project-area:last-of-type .project-image {
-  margin-bottom: 30px;
-}
-
 .project-desc p {
   font-size: 18px;
   font-weight: 300;
@@ -840,39 +840,64 @@ h1 a, h2 a, h3 a, h4 a {
 .single-project .text .project-desc {
   position: relative;
 }
-.single-project .nextprev a {
-  /*bottom: 30px;*/
-  cursor: pointer;
-  font-size: 3em;
-  color: #a0a1a4;
-  height: 50px;
-  position: absolute;
-  transform: translateX(-50%);
-  transition: 0.5s ease-out;
-  width: 50px;
-  z-index: 6;
-}
-.single-project .nextprev a:hover {
-  /*background: #000;*/
-  color: #000000;
-}
-.single-project .nextprev a.prev {
-  /*left: 45%;*/
-  position: fixed;
-  top: 36%;
-  left: 5%;
-}
-.single-project .nextprev a.next {
-  /*left: 55%;*/
-  position: fixed;
-  top: 36%;
-  right: 0%;
-}
 .single-project figure {
   height: 100vh;
   position: fixed;
   right: -20%;
   top: 0;
+}
+.single-project .big-text-holder {
+  background: #fff;
+  border-top: 2px solid lightgrey;
+  box-sizing: border-box;
+  display: table;
+  height: 300px;
+  width: 100%;
+}
+.single-project .big-text-holder .big-text-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.single-project .big-text-holder .big-text-inner h2 {
+  color: #000;
+  font-size: 58px;
+  font-weight: 600;
+}
+.single-project .big-text-holder .big-text-inner p {
+  margin-bottom: 0;
+}
+.single-project .stat-holder {
+  background: #fff;
+  border-top: 2px solid lightgrey;
+  box-sizing: border-box;
+  height: 300px;
+  padding: 110px 0 0 0;
+  width: 100%;
+}
+.single-project .stat-holder .stat-inner {
+  margin: 0 auto;
+  width: 70%;
+}
+.single-project .stat-holder .stat-inner .stat {
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  width: 32.333333%;
+}
+.single-project .stat-holder .stat-inner .stat > h2 {
+  color: #000;
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.single-project .stat-holder .stat-inner .stat > p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+}
+.single-project .stat-holder .stat-inner .stat p {
+  margin-bottom: 0;
 }
 .single-project .project-area {
   background: #fff;
@@ -885,7 +910,8 @@ h1 a, h2 a, h3 a, h4 a {
   color: #000;
   display: table;
   height: 400px;
-  left: 50px;
+  left: 70px;
+  padding: 30px;
   position: absolute;
   text-align: center;
   top: 50%;
@@ -894,13 +920,59 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .single-project .project-area:nth-of-type(odd) .project-area-text {
   left: auto;
-  right: 50px;
+  right: 70px;
 }
 .single-project .project-area .project-area-text .text-inner {
   color: #000;
   display: table-cell;
   vertical-align: middle;
 }
+.single-project .project-area .project-area-text h2 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.single-project .project-area .project-area-text p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+}
+.single-project .project-nav {
+  background: #fff;
+  height: 200px;
+  margin: 0 auto 70px auto;
+  text-align: center;
+  width: 100%;
+}
+.single-project .project-nav .nav-holder {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 70px 0 0 0;
+  width: 300px;
+}
+.single-project .project-nav .nav-holder a {
+  border: 4px solid #000;
+  display: inline-block;
+  font-size: 64px;
+  height: 60px;
+  line-height: 46px;
+  margin: 0 10px;
+  transition: 0.2s ease-out;
+  width: 60px;
+}
+.single-project .project-nav .nav-holder a:hover {
+  background: #000;
+  color: #fff;
+}
+.project footer .copyright {
+  bottom: 35px;
+}
+.project footer .right {
+  bottom: 33px;
+}
+
 
 /* Capabilities
 -------------------------------------------------- */
@@ -1185,7 +1257,6 @@ h1 a, h2 a, h3 a, h4 a {
 -------------------------------------------------- */
 .contact {
   background: rgba(0,0,0,1);
-  overflow: hidden;
 }
 .contact header {
   position: absolute;
