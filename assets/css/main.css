@@ -233,7 +233,7 @@ nav {
   transition: opacity .5s ease-out;
 }
 .menu.show {
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.9);
   color: #fff;
   height: 100vh;
   opacity: 1;
