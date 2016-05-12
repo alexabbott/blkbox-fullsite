@@ -170,6 +170,12 @@ body {
   position: fixed !important;
 }
 
+.desktop-only {
+  display: block !important;
+}
+.mobile-only {
+  display: none !important;
+}
 
 .justify-around {
   justify-content: space-around !important;
@@ -212,6 +218,9 @@ body {
   position: absolute;
   transition: color 0.5s ease-out;
   z-index: 1;
+}
+.logo:hover {
+  color: #fff;
 }
 
 
@@ -828,7 +837,9 @@ h1 a, h2 a, h3 a, h4 a {
 .project-desc p {
   font-size: 18px;
   font-weight: 300;
+  margin: 0 auto;
   text-align: center;
+  width: 70%;
 }
 .project-desc h1 {
   margin-bottom: 0;

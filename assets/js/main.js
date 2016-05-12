@@ -75,4 +75,17 @@ $(document).ready(function(){
 		});
 	}
 
+	if (window.innerWidth < 767 || screen.width < 767) {
+		$('.top-gif').on('touchstart', function() {
+			$('.top-gif').css('opacity','0');
+			var giffy = $('.bottom-gif').attr('data-src');
+			$('.bottom-gif').attr('src', giffy + "?a=" + Math.random());
+			$('.scroll-down').css({'opacity':'0','display':'none'});
+		});
+		$('.top-gif').on('touchend', function() {
+			$(this).css('opacity','1');
+			$('.scroll-down').css({'opacity':'1','display':'none'});
+		});
+	}
+
 });

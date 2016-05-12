@@ -4,11 +4,13 @@
 
     <div class="video-holder">
       <div class="video-overlay"></div>
-      <img data-src="<?php echo $kirby->urls()->assets() ?>/images/get-animation.gif" alt="blkbox" class="get-animation">
-      <video autoplay>
+      <img data-src="<?php echo $kirby->urls()->assets() ?>/images/get-animation.gif" alt="blkbox" class="get-animation desktop-only">
+      <video autoplay class="desktop-only">
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.mp4" type="video/mp4">
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.webm" type="video/webm">
       </video>
+      <img data-src="<?php echo $kirby->urls()->assets() ?>/images/get-animation-mobile.gif" alt="blkbox" class="mobile-only mobile-gif bottom-gif">
+      <img src="<?php echo $kirby->urls()->assets() ?>/images/mobile-reel.gif" alt="blkbox" class="mobile-only mobile-gif top-gif">
       <h3 class="animated fadeInUp scroll-down">PRESS & HOLD TO PLAY</h3>
       <i class="fa fa-volume-up"></i>
     </div>
