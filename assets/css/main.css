@@ -213,8 +213,9 @@ body {
   float: left;
   font-size: 1.5em;
   font-weight: 600;
-  margin-bottom: 0em;
-  padding: 1.3em 1.3em 1.3em 20px;
+  margin: 0.66em 1.3em 0em 0px;
+  padding: 0.5em 1em 0.5em 1.3em;
+  background: black;
   position: absolute;
   transition: color 0.5s ease-out;
   z-index: 1;
@@ -242,7 +243,7 @@ nav {
   transition: opacity .5s ease-out;
 }
 .menu.show {
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.9);
   color: #fff;
   height: 100vh;
   opacity: 1;
@@ -650,11 +651,17 @@ h1 a, h2 a, h3 a, h4 a {
 .work {
   height: auto;
 }
+.work header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
 .work .main {
   text-align: center;
 }
 .work .main-container {
-  margin-top: -105px;
+  margin-top: -30px;
 }
 .teaser li {
   height: 400px;
@@ -994,6 +1001,15 @@ h1 a, h2 a, h3 a, h4 a {
   color: #fff;
   height: auto;
 }
+.capabilities header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.capabilities .main-container {
+  padding-top: 75px;
+}
 .capabilities .logo {
   position: absolute;
   z-index: 3;
@@ -1120,10 +1136,10 @@ h1 a, h2 a, h3 a, h4 a {
   overflow: hidden;
 }
 .about .header {
-  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
+  position: fixed;
 }
 #aboutLanding {
   align-items: flex-start;
@@ -1272,9 +1288,9 @@ h1 a, h2 a, h3 a, h4 a {
   background: rgba(0,0,0,1);
 }
 .contact header {
-  position: absolute;
   width: 100%;
   z-index: 3;
+  position: fixed;
 }
 .contact footer {
   z-index: 3;
