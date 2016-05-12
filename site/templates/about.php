@@ -57,7 +57,7 @@
     <div id="photoStream" class="flex justify-between"></div>
   </div>
 
-  <div id="letsTalk" class="inline-block bold"><a href="mailto:info@weareblkbox.com?subject=Lets Talk">Let's Talk.</a></div>
+  <div id="letsTalk" class="inline-block bold"><a href="mailto:info@weareblkbox.com?subject=Lets Talk">LET'S TALK.</a></div>
 
 </main>
 
