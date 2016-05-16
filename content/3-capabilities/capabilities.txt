@@ -30,4 +30,64 @@ Subtext2: We live to make people feel uncomfortable. You will see, hear, and fee
 
 ----
 
-Bigtitle: Where the magic happens
+Bigtitle: Where the magic happens<span class="red-period"></span>
+
+----
+
+Mainimage: capabilities.gif
+
+----
+
+Box3: 
+
+----
+
+Subtext3: 
+
+----
+
+Box4: 
+
+----
+
+Subtext4: 
+
+----
+
+Box5: 
+
+----
+
+Subtext5: 
+
+----
+
+Box6: 
+
+----
+
+Subtext6: 
+
+----
+
+Subtext2column1: 
+
+Campaign Development
+Design & Art Direction
+Digital Design
+
+----
+
+Subtext2column2: 
+
+Copywriting & Content
+Video Production
+Social Influencer
+
+----
+
+Subtext2column3: 
+
+Digital Content
+Experience & PR
+Animations & Projection

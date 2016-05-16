@@ -17,8 +17,11 @@
 
     <?php if($page->projectbigtext()->isNotEmpty()): ?>
       <div class="big-text-holder">
-        <div class="big-text-inner">
+        <div class="big-text-inner text-center">
           <h2><?php echo $page->projectbigtext()->kirbytext() ?></h2>
+          <?php if($bigtextimage = $page->projectbigtextimage()->toFile()): ?>
+            <img class="big-text-image" src="<?php echo $bigtextimage->url() ?>" alt="<?php echo $page->title()->html() ?>">
+          <?php endif ?>
         </div>
       </div>
     <?php endif ?>

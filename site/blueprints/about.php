@@ -5,6 +5,12 @@ pages: false
 files:
   sortable: true
 fields:
+  mainimage:
+    label: Header Image
+    type:  selector
+    mode:  single
+    types:
+        - image
   title:
     label: Title
     type:  text

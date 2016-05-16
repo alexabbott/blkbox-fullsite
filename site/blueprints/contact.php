@@ -37,3 +37,6 @@ fields:
   cta:
     label: Call To Action
     type: textarea
+  contactinfo:
+    label: Contact Info
+    type: textarea

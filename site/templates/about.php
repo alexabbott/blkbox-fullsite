@@ -2,12 +2,14 @@
 
 <main id="AboutContent" class="main text-center animated fadeInUp" role="main">
 
-  <div id="aboutLanding"
-       class="flex column justify-center relative"
-       style="background-image: url(<?php echo $kirby->urls()->assets() ?>/images/about.jpg)">
-    <span class="background-mesh"></span>
-    <?php echo $page->landingText()->kirbytext() ?>
-  </div>
+  <?php if($file = $page->mainimage()->toFile()): ?>
+    <div id="aboutLanding"
+         class="flex column justify-center relative"
+         style="background-image: url(<?php echo $file->url() ?>)">
+      <span class="background-mesh"></span>
+      <?php echo $page->landingText()->kirbytext() ?>
+    </div>
+   <?php endif ?>
 
   <div id="aboutBlkbox" class="text-center">
     <h3 class="uppercase"><?php echo $page->headline()->kirbytext() ?></h3>

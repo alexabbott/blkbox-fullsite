@@ -14,6 +14,12 @@ fields:
     mode:  single
     types:
         - image
+  rollover:
+    label: Rollover Gif
+    type:  selector
+    mode:  single
+    types:
+        - image
   headline:
     label: Headline
     type:  text
@@ -47,6 +53,12 @@ fields:
   projectbigtext:
     label: Big Text
     type: textarea
+  projectbigtextimage:
+    label: Big Text Image
+    type:  selector
+    mode:  single
+    types:
+        - image
   projectimage1:
     label: Project Image/Video 1
     type:  selector

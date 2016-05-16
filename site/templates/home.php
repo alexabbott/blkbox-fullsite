@@ -3,16 +3,18 @@
   <main class="main" role="main">
 
     <div class="video-holder">
+      <div class="loader-holder"><span class="loader"><span class="loader-inner"></span></span></div>
       <div class="video-overlay"></div>
       <img data-src="<?php echo $kirby->urls()->assets() ?>/images/get-animation.gif" alt="blkbox" class="get-animation desktop-only">
-      <video autoplay class="desktop-only">
+      <video autoplay class="desktop-only" loop>
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.mp4" type="video/mp4">
         <source src="<?php echo $kirby->urls()->assets() ?>/images/intro.webm" type="video/webm">
       </video>
-      <img data-src="<?php echo $kirby->urls()->assets() ?>/images/get-animation-mobile.gif" alt="blkbox" class="mobile-only mobile-gif bottom-gif">
-      <img src="<?php echo $kirby->urls()->assets() ?>/images/mobile-reel.gif" alt="blkbox" class="mobile-only mobile-gif top-gif">
-      <h3 class="animated fadeInUp scroll-down">PRESS & HOLD TO PLAY</h3>
-      <i class="fa fa-volume-up"></i>
+      <img data-src="<?php echo $kirby->urls()->assets() ?>/images/get-animation-mobile.gif" alt="blkbox" class="mobile-gif bottom-gif">
+      <img src="<?php echo $kirby->urls()->assets() ?>/images/mobile-reel.gif" alt="blkbox" class="mobile-gif top-gif">
+      <h3 class="animated fadeInUp scroll-down">HOLD TO <img src="<?php echo $kirby->urls()->assets() ?>/images/eyes-icon.png" alt="blkbox" class="eyes-icon"></h3>
+      <i class="fa fa-volume-up animated fadeInUp"></i>
+      <p class="music-tag animated fadeInUp">MUSIC BY JOHNNY BURGOS</p>
     </div>
 
   </main>

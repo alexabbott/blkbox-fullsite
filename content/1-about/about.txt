@@ -99,7 +99,7 @@ Landingtext:
 #LOVE ME
 #OR HATE ME
 #AS LONG AS YOU
-#UNDERSTAND ME<span class="red">.</span>
+#UNDERSTAND ME<span class="red-period"></span>
 
 ----
 
@@ -108,3 +108,7 @@ Intro: ##is your access to our mystifying, complicated open- minded and world-ch
 ----
 
 Body: We're young, but we're experienced. Not know-it-alls. In fact we don't know all of the answers, but we're gonna have a hell of a time finding them. We're unapologetic, not arrogant. We're creators, not fluffers. We're passionate AF. And we know one thing is true. You have to GET UNCOMFORTABLE to grow.
+
+----
+
+Mainimage: about.jpg

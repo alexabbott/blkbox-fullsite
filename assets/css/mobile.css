@@ -14,21 +14,29 @@
   .mobile-only {
     display: block !important;
   }
+  .red-period {
+    height: 10px;
+    margin-top: 9px;
+    width: 10px;
+  }
 
 /* Header
 -------------------------------------------------- */
   .header {
-    background: rgba(0,0,0,0.7);
     position: fixed;
     width: 100%;
     z-index: 4;
   }
   .logo {
+    background: #000;
+    box-sizing: border-box;
     color: #fff;
     left: 0;
     padding: 0.8em;
     background: none;
     margin: auto;
+    margin-top: 12px;
+    padding: 0.3em 0.6em 0.3em 0.8em;
     position: absolute;
     top: 0;
     z-index: 2;
@@ -66,6 +74,9 @@
     padding-top: 37px;
     width: 90%;
   }
+  .menu li, .menu li a {
+    transition: border 0s ease-out, color 0s ease-out;
+  }
   .menu li:nth-of-type(4) a {
     width: 60%;
   }
@@ -87,6 +98,12 @@
     background: #000;
     height: auto;
   }
+  .home .main-container {
+    margin-top: 0;
+  }
+  .home footer, .home .music-tag {
+    display: none;
+  }
   .main .big-text {
     font-size: 52px;
     margin-left: 20px;
@@ -106,10 +123,12 @@
     width: 100vw;
   }
   .home .scroll-down {
-    left: 0;
-    margin-left: -140px;
+    bottom: auto;
+    height: 35px;
+    left: 50% !important;
     pointer-events: none;
-    width: 100%;
+    top: 70vh;
+    width: 150px;
     z-index: 3;
   }
   .home .text {
@@ -119,6 +138,7 @@
     display: none;
   }
   .mobile-gif {
+    display: block;
     left: 0;
     position: absolute;
     top: 0;
@@ -143,6 +163,9 @@
   .capabilities header {
     margin-bottom: 0;
   }
+  .capabilities .logo, .about .logo, .home .logo, .work .logo, .project .logo, .contact .logo {
+    background: #000;
+  }
   .capabilities .top-section {
     background-position-x: 50% !important;
     height: 300px;
@@ -151,17 +174,43 @@
   .capabilities h1 {
     font-size: 2em;
     left: 40px;
-    top: 120px;
-    width: 56%;
+    top: 20px;
+    width: 80%;
+  }
+  .capabilities .box {
+    font-size: 1.7em;
+    height: 260px;
+    width: 260px;
+  }
+  .capabilities .box-holder {
+    width: 100%;
   }
   .capabilities .left-side, .capabilities .right-side {
+    height: auto;
     width: 100%;
+  }
+  .capabilities .left-side .box, .capabilities .right-side .box, .capabilities .left-side .subtext, .capabilities .right-side .subtext {
+    float: none;
   }
   .capabilities .subtext {
     width: 100%;
     font-size: 0.9em;
+    padding: 0 !important;
   }
-
+  .capabilities .subtext p {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .capabilities hr {
+    margin: 20px 0 0 0;
+  }
+  .capabilities .lets-talk {
+    margin-bottom: -10px;
+    margin-left: auto;
+  }
+  .capabilities .column {
+    width: 100%;
+  }
 
 
 /* PROJECTS
@@ -170,7 +219,7 @@
     margin-top: 0;
   }
   .work .teaser {
-    margin-top: 75px;
+    margin-top: 0px;
   }
   .work .teaser li {
     height: 200px;
@@ -185,23 +234,30 @@
     background-position-x: 70% !important;
   }
   .work .main-client {
-    font-size: 0.9em;
+    font-size: 0.7em;
     height: 41px;
     margin-bottom: 13px;
+    margin-top: -10px;
   }
   .work .main-headline {
-    font-size: 1.2em;
-    margin-bottom: 0;
+    font-size: 1em;
+    margin-bottom: 8px;
   }
   .work .main-subtitle {
-    font-size: 0.9em;
-    line-height: 1.4em;
+    font-size: 0.7em;
+    line-height: 1.2em;
+  }
+  .work .teaser li .rollover-image {
+    background-position-x: 25% !important;
+  }
+  .client-list {
+    margin-bottom: 25px;
   }
   .client-list img {
-    width: 75px;
+    width: 100%;
   }
   .work .colophon .right {
-    bottom: 15px;
+    bottom: 10px;
   }
   .project .main-container {
     margin-top: 0;
@@ -258,11 +314,21 @@
     margin-top: 30px;
   }
   .single-project .project-area .project-area-text {
-    height: auto;
+    height: 230px;
     left: 50%;
+    padding: 0;
     right: auto;
     transform: translate(-50%,-50%);
-    width: 80%;
+    width: 230px;
+  }
+  .single-project .project-area .project-area-text h2 {
+    font-size: 36px;
+    word-break: break-all;
+  }
+  .single-project .project-area .project-area-text p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 0;
   }
   .single-project .project-area:nth-of-type(even) .project-area-text {
     left: 50%;
@@ -279,14 +345,26 @@
   .single-project .nextprev a.next {
     /*left: 60%;*/
   }
+  .single-project .project-nav {
+    margin-bottom: 25px;
+  }
   .single-project .stat-holder .stat-inner .stat {
     width: 100%;
+  }
+  .project footer .copyright {
+    bottom: 10px;
+  }
+  .project footer .right {
+    bottom: 10px;
   }
 
 /* ABOUT
 -------------------------------------------------- */
+  .about .header {
+    z-index: 4;
+  }
   #aboutLanding {
-    height: 50vh;
+    height: 400px;
   }
   #aboutLanding h1 {
     font-size: 1.6em !important;
@@ -301,7 +379,7 @@
   }
   #aboutBlkbox p {
     width: 90% !important;
-    font-size: 0.8em;
+    font-size: 18px;
   }
   #aboutBlkbox h2 {
     width: 90% !important;
@@ -315,7 +393,7 @@
     align-items: center;
   }
   #AboutContent #letsTalk {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   #photoStream {
     flex-flow: row wrap;
@@ -358,10 +436,44 @@
   #contactCTA {
     margin-bottom: 80px;
   }
+  .contact .address, .contact .address p {
+    color: #fff !important;
+    font-size: 14px;
+  }
+  .submit-holder {
+    position: relative;
+  }
+  .submit-button {
+    background: #fff;
+    display: inline-block;
+    border-radius: 0;
+    color: #000;
+    cursor: pointer;
+    font-family: "futura-pt", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: -1px;
+    padding: 4px 0;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    transition: 0.2s ease-out;
+    width: 70px;
+  }
+  .submit-button:hover {
+    background: #000;
+    color: #fff;
+  }
 
 /* Footer
 -------------------------------------------------- */
-
+  .contact .footer {
+    background: #000;
+    height: 50px;
+  }
   .home .footer {
     bottom: -50px;
     color: #000;
@@ -373,11 +485,12 @@
     color: #fff;
   }
   footer .copyright {
-    display: none;
+    left: 10px;
   }
   .colophon .right {
+    bottom: 10px;
     width: 100%;
-    text-align: center;
+    text-align: right;
     right: 0;
   }
   .colophon .right a {

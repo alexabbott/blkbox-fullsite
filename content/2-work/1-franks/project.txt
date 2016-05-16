@@ -119,3 +119,7 @@ Text4: test4
 ----
 
 Subtext4: test4
+
+----
+
+Rollover: franks-rollover.gif
